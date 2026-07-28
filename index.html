@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISTEMA DE MONITORAMENTO - DM TECH</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1736558787065660'); 
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
     <style>
         body { font-family: -apple-system, system-ui, sans-serif; background-color: #0e1012; color: white; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; }
-        .container { width: 90%; max-width: 400px; text-align: center; border: 1px solid #1ed760; padding: 30px; border-radius: 20px; background: linear-gradient(145deg, #131518, #0e1012); }
+        .container { width: 90%; max-width: 400px; text-align: center; border: 1px solid #1ed760; padding: 30px; border-radius: 20px; background: linear-gradient(145deg, #131518, #0e1012); box-shadow: 0 0 20px rgba(30, 215, 96, 0.2); }
         .badge { background: #1ed760; color: black; padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 12px; text-transform: uppercase; }
         h1 { font-size: 24px; margin: 20px 0 10px; }
         p { color: #8a8d91; font-size: 15px; line-height: 1.5; margin-bottom: 25px; }
-        .btn { background: #25d366; color: white; text-decoration: none; padding: 18px; border-radius: 12px; display: block; font-weight: bold; font-size: 18px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); animation: pulse 2s infinite; }
+        .btn { background: #25d366; color: white; text-decoration: none; padding: 18px; border-radius: 12px; display: block; font-weight: bold; font-size: 18px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); animation: pulse 2s infinite; cursor: pointer; border: none; width: 100%; }
         .platforms { margin-top: 30px; opacity: 0.5; display: flex; justify-content: center; gap: 15px; font-size: 12px; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
     </style>
@@ -19,9 +30,10 @@
     <div class="container">
         <span class="badge">● SISTEMA ATIVO</span>
         <h1>Flash Ofertas 23⚡</h1>
-        <p>Monitoramos erros de sistema e cupons em tempo real. Entre no grupo oficial para receber os alertas antes que expirem.</p>
+        <p>Monitoramos erros de sistema e cupons em tempo real. Entre no grupo oficial para receber os alertas.</p>
         
-        <a href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz" class="btn">QUERO ACESSAR O GRUPO</a>
+        <!-- Botão com Rastreamento de Lead -->
+        <a href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz" class="btn" onclick="fbq('track', 'Lead');">QUERO ACESSAR O GRUPO</a>
 
         <div class="platforms">
             <span>Mercado Livre</span> | <span>Shopee</span> | <span>Amazon</span>
