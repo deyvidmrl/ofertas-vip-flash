@@ -3,90 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA FLASH OFERTAS - ACESSO</title>
-    <!-- Pixel Code -->
+    <title>RASTREIO DE OFERTAS - 100% GRATUITO</title>
+    <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s){if(f.fb)return;n=f.fbq=function(){n.callMethod?
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1736558787065660'); fbq('track', 'PageView');
     </script>
-    
     <style>
-        :root { --neon: #dfff00; --bg: #000000; --card: #111111; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: white; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        :root { --neon-green: #1ed760; --dark-bg: #0b1416; --card-bg: #162124; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: white; margin: 0; padding: 0; text-align: center; }
+        .top-bar { background: #ff3b3b; padding: 10px; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
         
-        .container { width: 90%; max-width: 400px; padding: 30px 20px; border-radius: 24px; background: var(--card); border: 1px solid #222; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
-        .logo { width: 120px; height: 120px; border-radius: 50%; border: 2px solid var(--neon); margin-bottom: 20px; box-shadow: 0 0 20px rgba(223, 255, 0, 0.3); }
-        
-        h1 { font-size: 22px; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
-        p { color: #888; font-size: 14px; margin-bottom: 30px; }
-        
-        .btn { background: var(--neon); color: black; text-decoration: none; padding: 18px; border-radius: 14px; display: block; font-weight: 900; font-size: 16px; border: none; width: 100%; cursor: pointer; transition: 0.3s; }
-        .btn:hover { transform: scale(1.02); background: #f0ff42; }
+        /* Hero Section */
+        .hero { padding: 40px 20px; display: flex; flex-direction: column; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .hero-text { margin-bottom: 30px; }
+        .hero-text h1 { font-size: 32px; line-height: 1.1; margin: 15px 0; font-weight: 900; }
+        .hero-text span { color: var(--neon-green); }
+        .profile-img { width: 220px; height: 220px; border-radius: 50%; border: 4px solid var(--neon-green); box-shadow: 0 0 30px rgba(30, 215, 96, 0.3); margin-top: 20px; }
 
-        /* Estilo da Verificação (O que você gostou) */
-        #verify-screen { display: none; text-align: left; }
-        .step { display: flex; align-items: center; margin-bottom: 15px; font-size: 14px; color: #555; }
-        .step.active { color: white; }
-        .step.done { color: var(--neon); }
-        .icon { margin-right: 15px; width: 20px; text-align: center; }
+        .btn { background: var(--neon-green); color: black; text-decoration: none; padding: 18px 40px; border-radius: 12px; display: inline-flex; align-items: center; gap: 10px; font-weight: bold; font-size: 18px; margin: 20px 0; transition: 0.3s; width: 100%; max-width: 320px; justify-content: center; border: none; cursor: pointer; }
+        .social-proof { font-size: 13px; color: #1ed760; font-weight: bold; opacity: 0.8; }
+
+        /* Features Grid */
+        .features { padding: 40px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 600px; margin: 0 auto; }
+        .feature-card { background: var(--card-bg); padding: 20px; border-radius: 15px; text-align: left; border: 1px solid #222; }
+        .feature-card h3 { font-size: 14px; margin: 10px 0 5px; color: white; }
+        .feature-card p { font-size: 11px; color: #888; margin: 0; }
         
-        .progress-bar { width: 100%; height: 6px; background: #222; border-radius: 10px; margin-top: 25px; overflow: hidden; }
-        .progress-fill { width: 0%; height: 100%; background: var(--neon); transition: width 0.5s; }
+        /* Stats Section */
+        .stats { display: flex; justify-content: space-around; padding: 40px 20px; background: rgba(0,0,0,0.2); }
+        .stat-item h2 { color: var(--neon-green); font-size: 32px; margin: 0; }
+        .stat-item p { font-size: 10px; color: #888; text-transform: uppercase; margin-top: 5px; }
+
+        /* Footer CTA */
+        .footer-cta { padding: 60px 20px; background: linear-gradient(to bottom, var(--dark-bg), #000); }
+        .footer-card { background: var(--card-bg); border: 1px solid #333; padding: 40px 20px; border-radius: 25px; }
+
+        #verify-screen { display: none; padding: 100px 20px; }
+        .loader { border: 4px solid #222; border-left-color: var(--neon-green); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
 
-    <!-- TELA INICIAL -->
-    <div class="container" id="main-card">
-        <img src="logo.png" alt="Flash Ofertas" class="logo">
-        <h1>Acesso ao Grupo VIP</h1>
-        <p>Clique no botão abaixo para verificar a disponibilidade de vagas e entrar no grupo.</p>
-        <button class="btn" onclick="startVerification()">QUERO ACESSAR O GRUPO</button>
+    <div class="top-bar">🎯 APROVEITE AGORA AS MELHORES PROMOÇÕES DE 2026</div>
+
+    <!-- TELA PRINCIPAL -->
+    <div id="main-content">
+        <section class="hero">
+            <div class="hero-text">
+                <p style="color: #888;">🚨 RASTREIO DE OFERTAS</p>
+                <h1>100% <span>GRATUITO</span> 🚨</h1>
+                <p>Produtos pela <b>METADE DO PREÇO</b> ⚡</p>
+                
+                <button class="btn" onclick="startVerification()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20"> ENTRAR NO GRUPO
+                </button>
+                <div class="social-proof">✓ JÁ SOMOS +700 MIL MEMBROS</div>
+            </div>
+            <img src="perfil.png" alt="Deyvid" class="profile-img">
+        </section>
+
+        <section style="padding: 20px;">
+            <p style="color: var(--neon-green); font-size: 12px; font-weight: bold;">O QUE VOCÊ RECEBE</p>
+            <h2 style="font-size: 24px;">Tudo o que precisa pra nunca mais pagar caro.</h2>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Promoções 24h</h3>
+                    <p>Rastreio todas as lojas dia e noite pra você.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cupons Exclusivos</h3>
+                    <p>Descontos que não aparecem em nenhum lugar.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Ofertas Relâmpago</h3>
+                    <p>Aviso antes de acabar — compre primeiro.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Só promoções reais</h3>
+                    <p>O que realmente vale a pena.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-item"><h2>+700 MIL</h2><p>Membros Ativos</p></div>
+            <div class="stat-item"><h2>+100</h2><p>Ofertas por Dia</p></div>
+        </section>
+
+        <section class="footer-cta">
+            <div class="footer-card">
+                <h2>Sua próxima compra pode sair pela metade.</h2>
+                <p>Entrada gratuita. Vagas limitadas.</p>
+                <button class="btn" onclick="startVerification()">ENTRAR NO GRUPO AGORA</button>
+                <p style="font-size: 12px; color: #555;">🔒 Grupo oficial · Sem custo</p>
+            </div>
+            <p style="font-size: 10px; color: #333; margin-top: 40px;">© Flash Ofertas — todos os direitos reservados.</p>
+        </section>
     </div>
 
-    <!-- TELA DE VERIFICAÇÃO -->
-    <div class="container" id="verify-screen">
-        <h2 style="font-size: 18px; margin-bottom: 25px; text-align: center;">VERIFICANDO ACESSO...</h2>
-        
-        <div class="step" id="step1"><div class="icon" id="icon1">○</div> Verificando integridade do link...</div>
-        <div class="step" id="step2"><div class="icon" id="icon2">○</div> Analisando vagas disponíveis...</div>
-        <div class="step" id="step3"><div class="icon" id="icon3">○</div> Criptografando conexão segura...</div>
-        <div class="step" id="step4"><div class="icon" id="icon4">○</div> Redirecionando para o WhatsApp...</div>
-
-        <div class="progress-bar"><div class="progress-fill" id="fill"></div></div>
+    <!-- TELA DE VERIFICAÇÃO (MANTIDA PARA ALTA CONVERSÃO) -->
+    <div id="verify-screen">
+        <div class="loader"></div>
+        <h2 style="color: var(--neon-green);">VERIFICANDO VAGAS...</h2>
+        <p id="status">Conectando ao servidor oficial...</p>
     </div>
 
     <script>
     function startVerification() {
-        fbq('track', 'Lead'); // Rastreia o Lead no momento do clique
-        
-        document.getElementById('main-card').style.display = 'none';
+        fbq('track', 'Lead');
+        document.getElementById('main-content').style.display = 'none';
         document.getElementById('verify-screen').style.display = 'block';
-
-        const steps = [
-            { id: 1, time: 800, progress: 25 },
-            { id: 2, time: 1800, progress: 50 },
-            { id: 3, time: 2800, progress: 80 },
-            { id: 4, time: 3800, progress: 100 }
-        ];
-
-        steps.forEach(step => {
-            setTimeout(() => {
-                document.getElementById('step' + step.id).classList.add('done');
-                document.getElementById('icon' + step.id).innerText = '✓';
-                document.getElementById('fill').style.width = step.progress + '%';
-                
-                if(step.id === 4) {
-                    setTimeout(() => {
-                        window.location.href = "https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz";
-                    }, 1000);
-                }
-            }, step.time);
-        });
+        
+        const status = document.getElementById('status');
+        setTimeout(() => { status.innerText = "Analisando perfil do membro..."; }, 1000);
+        setTimeout(() => { status.innerText = "Vaga localizada! Redirecionando..."; }, 2000);
+        setTimeout(() => {
+            window.location.href = "https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz";
+        }, 3000);
     }
     </script>
 </body>
