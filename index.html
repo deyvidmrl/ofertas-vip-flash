@@ -71,7 +71,7 @@
 </head>
 <body>
 
-    <div class="top-banner">🚀 APROVEITE AGORA AS MELHORES PROMOÇÕES DE 2024</div>
+    <div class="top-banner">🚀 APROVEITE AGORA AS MELHORES PROMOÇÕES DE 2026</div>
 
     <div class="container">
         <!-- HERO SECTION -->
@@ -83,7 +83,7 @@
                     <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.887.002-5.462-4.415-9.89-9.881-9.891-5.446 0-9.884 4.438-9.887 9.887-.001 2.225.679 3.991 1.868 5.766l-.999 3.647 3.772-.989zm11.315-7.474c-.33-.165-1.951-.963-2.254-1.074-.303-.11-.523-.165-.743.165-.22.33-.853 1.074-1.046 1.294-.192.22-.385.247-.715.082-.329-.165-1.389-.512-2.645-1.633-.977-.872-1.637-1.95-1.828-2.28-.192-.33-.021-.508.145-.671.148-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.028-.578-.083-.165-.743-1.791-1.018-2.451-.268-.644-.543-.557-.743-.567-.193-.009-.413-.011-.633-.011-.22 0-.578.082-.88.413-.303.33-1.155 1.128-1.155 2.75s1.183 3.19 1.348 3.41c.165.22 2.328 3.555 5.639 4.985.787.34 1.401.543 1.881.696.79.25 1.511.215 2.08.13.634-.094 1.951-.798 2.226-1.568.275-.77.275-1.43.192-1.568-.083-.138-.303-.22-.633-.385z"/></svg>
                     ENTRAR NO GRUPO
                 </a>
-                <p style="font-size: 13px; color: var(--neon); margin-top: 15px; font-weight: bold;">✓ JÁ SOMOS +700 MIL MEMBROS</p>
+                <p style="font-size: 13px; color: var(--neon); margin-top: 15px; font-weight: bold;">✓ JÁ SOMOS +100 MIL MEMBROS</p>
             </div>
             <div class="hero-image">
                 <img src="https://github.com/deyvidmrl.png" alt="Deyvid - Flash Ofertas">
@@ -132,7 +132,7 @@
             <p style="color: var(--neon); font-weight: bold; font-size: 12px; text-transform: uppercase;">Junte-se à comunidade</p>
             <div class="stats-grid">
                 <div class="stat-box">
-                    <h2>+700 MIL</h2>
+                    <h2>+100 MIL</h2>
                     <p>Membros Ativos</p>
                 </div>
                 <div class="stat-box">
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="stars">★★★★★</div>
-            <p style="font-size: 13px; color: var(--text-dim);">Mais de 700 mil pessoas já economizam todo dia.</p>
+            <p style="font-size: 13px; color: var(--text-dim);">Mais de 100 mil pessoas já economizam todo dia.</p>
         </section>
 
         <!-- FINAL CTA SECTION -->
@@ -159,5 +159,45 @@
             © Flash Ofertas — Todos os direitos reservados.
         </footer>
     </div>
+    <!-- INÍCIO DO POP-UP DE PROVA SOCIAL -->
+<div id="social-pop" style="display: none; position: fixed; bottom: 20px; left: 20px; background: #111; border: 1px solid #ccff00; padding: 15px; border-radius: 12px; z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); align-items: center; gap: 10px; min-width: 250px; animation: slideIn 0.5s ease-out;">
+    <div style="background: #ccff00; color: black; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</div>
+    <div style="text-align: left;">
+        <p id="pop-text" style="margin: 0; font-size: 13px; color: white; font-family: sans-serif;"></p>
+        <p style="margin: 0; font-size: 11px; color: #ccff00; font-family: sans-serif;">Acabou de aproveitar uma oferta!</p>
+    </div>
+</div>
+
+<style>
+    @keyframes slideIn { from { transform: translateX(-120%); } to { transform: translateX(0); } }
+    @keyframes slideOut { from { transform: translateX(0); } to { transform: translateX(-120%); } }
+</style>
+
+<script>
+    const names = ["Leticia M.", "Marcos J.", "Deyvid R.", "Amanda S.", "Ricardo F.", "Carla P.", "João V.", "Beatriz L."];
+    const items = ["uma TV 4K", "um iPhone 15", "uma Airfryer", "um Tênis Nike", "um Console PS5", "uma Cafeteira"];
+    
+    function showPop() {
+        const pop = document.getElementById('social-pop');
+        const text = document.getElementById('pop-text');
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const randomItem = items[Math.floor(Math.random() * items.length)];
+        
+        text.innerHTML = `<b>${randomName}</b> economizou em <b>${randomItem}</b>`;
+        pop.style.display = 'flex';
+        pop.style.animation = 'slideIn 0.5s ease-out';
+        
+        setTimeout(() => {
+            pop.style.animation = 'slideOut 0.5s ease-out';
+            setTimeout(() => { pop.style.display = 'none'; }, 500);
+        }, 4000);
+    }
+
+    // Inicia o ciclo de notificações (uma a cada 8 segundos)
+    setInterval(showPop, 8000);
+    // Primeira notificação aparece após 3 segundos
+    setTimeout(showPop, 3000);
+</script>
+<!-- FIM DO POP-UP DE PROVA SOCIAL -->
 </body>
 </html>
