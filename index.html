@@ -159,23 +159,20 @@
             © Flash Ofertas — Todos os direitos reservados.
         </footer>
     </div>
-    <!-- INÍCIO DO POP-UP DE PROVA SOCIAL -->
-<div id="social-pop" style="display: none; position: fixed; bottom: 20px; left: 20px; background: #111; border: 1px solid #ccff00; padding: 15px; border-radius: 12px; z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); align-items: center; gap: 10px; min-width: 250px; animation: slideIn 0.5s ease-out;">
-    <div style="background: #ccff00; color: black; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</div>
-    <div style="text-align: left;">
-        <p id="pop-text" style="margin: 0; font-size: 13px; color: white; font-family: sans-serif;"></p>
-        <p style="margin: 0; font-size: 11px; color: #ccff00; font-family: sans-serif;">Acabou de aproveitar uma oferta!</p>
-    </div>
-</div>
+  <script>
+    // LISTA EXPANDIDA DE NOMES (SENSE OF REALITY)
+    const names = [
+        "Leticia M.", "Marcos J.", "Deyvid R.", "Amanda S.", "Ricardo F.", "Carla P.", "João V.", "Beatriz L.",
+        "Fernanda G.", "Mateus K.", "Rodrigo A.", "Patrícia B.", "Gustavo H.", "Camila T.", "Tiago M.", "Juliana S.",
+        "Vitor P.", "Larissa C.", "Bruno W.", "Sabrina E.", "Daniel Q.", "Felipe N.", "Renata L.", "André Z."
+    ];
 
-<style>
-    @keyframes slideIn { from { transform: translateX(-120%); } to { transform: translateX(0); } }
-    @keyframes slideOut { from { transform: translateX(0); } to { transform: translateX(-120%); } }
-</style>
-
-<script>
-    const names = ["Leticia M.", "Marcos J.", "Deyvid R.", "Amanda S.", "Ricardo F.", "Carla P.", "João V.", "Beatriz L."];
-    const items = ["uma TV 4K", "um iPhone 15", "uma Airfryer", "um Tênis Nike", "um Console PS5", "uma Cafeteira"];
+    // LISTA DE ITENS (PRODUTOS DE ALTO DESEJO)
+    const items = [
+        "uma TV 4K 50'", "um iPhone 15 Pro", "uma Airfryer Mondial", "um Tênis Nike Air", "um PS5", 
+        "uma Cafeteira Dolce Gusto", "um Monitor Gamer", "um Smartwatch", "um Fone JBL", "um Kit de Ferramentas",
+        "uma Cadeira Gamer", "um Tablet Samsung", "uma Alexa Echo Dot", "uma Parafusadeira", "um Notebook Dell"
+    ];
     
     function showPop() {
         const pop = document.getElementById('social-pop');
@@ -184,20 +181,24 @@
         const randomItem = items[Math.floor(Math.random() * items.length)];
         
         text.innerHTML = `<b>${randomName}</b> economizou em <b>${randomItem}</b>`;
+        
         pop.style.display = 'flex';
         pop.style.animation = 'slideIn 0.5s ease-out';
         
+        // Fica na tela por 5 segundos
         setTimeout(() => {
             pop.style.animation = 'slideOut 0.5s ease-out';
-            setTimeout(() => { pop.style.display = 'none'; }, 500);
-        }, 4000);
+            setTimeout(() => { 
+                pop.style.display = 'none'; 
+            }, 500);
+        }, 5000);
     }
 
-    // Inicia o ciclo de notificações (uma a cada 8 segundos)
-    setInterval(showPop, 8000);
-    // Primeira notificação aparece após 3 segundos
-    setTimeout(showPop, 3000);
+    // Intervalo reduzido para 6 segundos (Movimento constante no site)
+    setInterval(showPop, 6000); 
+    
+    // Primeira notificação aparece logo após 2 segundos do carregamento
+    setTimeout(showPop, 2000);
 </script>
-<!-- FIM DO POP-UP DE PROVA SOCIAL -->
 </body>
 </html>
