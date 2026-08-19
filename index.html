@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA FLASH OFERTAS 23⚡</title>
+    <title>MONITORAMENTO FLASH 23⚡</title>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,104 +18,65 @@
         :root { --green: #25d366; --dark: #0a0a0a; --card: #1a1c1e; --accent: #f3ce49; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--dark); color: white; margin: 0; display: flex; justify-content: center; min-height: 100vh; }
         .lp-container { width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box; }
-        
-        .logo { font-size: 24px; font-weight: 900; color: var(--green); text-align: center; margin-bottom: 20px; }
-        
-        .status-badge { background: rgba(37, 211, 102, 0.1); border: 1px solid var(--green); color: var(--green); padding: 6px 15px; border-radius: 50px; font-size: 11px; font-weight: bold; display: block; width: fit-content; margin: 0 auto 20px; }
-
-        h1 { font-size: 24px; text-align: center; margin-bottom: 25px; line-height: 1.3; font-weight: 800; }
+        .logo { font-size: 22px; font-weight: 900; color: var(--green); text-align: center; margin-bottom: 20px; letter-spacing: -1px; }
+        .status-badge { background: rgba(37, 211, 102, 0.1); border: 1px solid var(--green); color: var(--green); padding: 6px 15px; border-radius: 50px; font-size: 10px; font-weight: bold; display: block; width: fit-content; margin: 0 auto 20px; }
+        h1 { font-size: 24px; text-align: center; margin-bottom: 25px; line-height: 1.2; font-weight: 800; }
         h1 span { color: var(--accent); }
-
-        .alerts-title { font-size: 14px; color: #888; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
+        .alerts-title { font-size: 13px; color: #666; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
         .alerts-title::after { content: ""; height: 1px; background: #333; flex: 1; }
-
-        /* Estilo dos Cards de Oferta */
         .product-list { display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px; }
-        .p-card { background: var(--card); border-radius: 16px; padding: 15px; display: flex; align-items: center; border: 1px solid #2d2f31; position: relative; }
-        
-        .p-img { width: 85px; height: 85px; background: #fff; border-radius: 12px; padding: 5px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; }
-        .p-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
-
+        .p-card { background: var(--card); border-radius: 16px; padding: 12px; display: flex; align-items: center; border: 1px solid #2d2f31; }
+        .p-img { width: 90px; height: 90px; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; overflow: hidden; }
+        .p-img img { width: 100%; height: 100%; object-fit: contain; }
         .p-content { flex: 1; }
         .p-tag { background: var(--accent); color: #000; font-size: 9px; font-weight: 900; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 5px; }
-        .p-name { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #e1e1e1; }
-        .p-prices { display: flex; align-items: baseline; gap: 8px; }
-        .old-p { font-size: 12px; color: #ff5e5e; text-decoration: line-through; }
-        .new-p { font-size: 20px; color: var(--green); font-weight: 900; }
-
-        .btn-join { background: var(--green); color: white; text-decoration: none; padding: 20px; border-radius: 16px; display: block; text-align: center; font-weight: bold; font-size: 18px; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3); animation: pulse 2s infinite; }
-        
-        .online-count { text-align: center; font-size: 13px; color: #888; margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 6px; }
-        .online-dot { height: 7px; width: 7px; background: var(--green); border-radius: 50%; animation: blink 1.5s infinite; }
-
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+        .p-name { font-size: 14px; font-weight: 600; margin-bottom: 5px; color: #fff; }
+        .p-prices { display: flex; flex-direction: column; }
+        .old-p { font-size: 11px; color: #ff5e5e; text-decoration: line-through; }
+        .new-p { font-size: 22px; color: var(--green); font-weight: 900; }
+        .btn-join { background: var(--green); color: white; text-decoration: none; padding: 20px; border-radius: 18px; display: block; text-align: center; font-weight: 800; font-size: 20px; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); animation: pulse 1.5s infinite; }
+        .online-count { text-align: center; font-size: 12px; color: #666; margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        .online-dot { height: 6px; width: 6px; background: var(--green); border-radius: 50%; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
     </style>
 </head>
 <body>
     <div class="lp-container">
         <div class="logo">FLASH OFERTAS 23⚡</div>
-        <div class="status-badge">● SISTEMA DE VARREDURA ATIVO</div>
-
-        <h1>Os Melhores <span>Erros de Preços</span> em Tempo Real</h1>
-
-        <div class="alerts-title">Alertas Recentes</div>
-
+        <div class="status-badge">● 412 LOJAS SENDO MONITORADAS</div>
+        <h1>Aproveite os <span>Erros de Preço</span> de hoje:</h1>
+        <div class="alerts-title">Alertas do Sistema</div>
         <div class="product-list">
-            <!-- PRODUTO 1 -->
+            <!-- IPHONE -->
             <div class="p-card">
-                <div class="p-img">
-                    <img src="https://m.media-amazon.com/images/I/71d7rj97yLL._AC_SL1500_.jpg" alt="iPhone 15">
-                </div>
+                <div class="p-img"><img src="iphone.jpg" alt="iPhone 13"></div>
                 <div class="p-content">
                     <span class="p-tag">ERRO DE PREÇO</span>
-                    <div class="p-name">iPhone 15 Apple (128 GB) - Tela 6,1"</div>
-                    <div class="p-prices">
-                        <span class="old-p">R$ 4.999</span>
-                        <span class="new-p">R$ 2.840</span>
-                    </div>
+                    <div class="p-name">iPhone 13 Apple (128GB) Meia-noite</div>
+                    <div class="p-prices"><span class="old-p">R$ 4.299</span><span class="new-p">R$ 2.440</span></div>
                 </div>
             </div>
-
-            <!-- PRODUTO 2 -->
+            <!-- BOSCH -->
             <div class="p-card">
-                <div class="p-img">
-                    <img src="https://m.media-amazon.com/images/I/61m1W8u392L._AC_SL1000_.jpg" alt="Kit Ferramentas">
-                </div>
+                <div class="p-img"><img src="bosch.jpg" alt="Kit Bosch"></div>
                 <div class="p-content">
-                    <span class="p-tag">CUPOM 70%</span>
-                    <div class="p-name">Kit de Ferramentas Profissional Bosch (142pçs)</div>
-                    <div class="p-prices">
-                        <span class="old-p">R$ 549</span>
-                        <span class="new-p">R$ 189</span>
-                    </div>
+                    <span class="p-tag">CUPOM 75% OFF</span>
+                    <div class="p-name">Maleta Ferramentas Bosch 142 pçs</div>
+                    <div class="p-prices"><span class="old-p">R$ 549</span><span class="new-p">R$ 137</span></div>
                 </div>
             </div>
-
-            <!-- PRODUTO 3 -->
+            <!-- COOKTOP -->
             <div class="p-card">
-                <div class="p-img">
-                    <img src="https://m.media-amazon.com/images/I/516mD0rY2-L._AC_SL1000_.jpg" alt="Cooktop">
-                </div>
+                <div class="p-img"><img src="cooktop.jpg" alt="Cooktop"></div>
                 <div class="p-content">
                     <span class="p-tag">ERRO DE SISTEMA</span>
-                    <div class="p-name">Cooktop 5 Bocas Philco Vidro Temperado</div>
-                    <div class="p-prices">
-                        <span class="old-p">R$ 699</span>
-                        <span class="new-p">R$ 247</span>
-                    </div>
+                    <div class="p-name">Cooktop 5 Bocas Vidro Temperado</div>
+                    <div class="p-prices"><span class="old-p">R$ 689</span><span class="new-p">R$ 247</span></div>
                 </div>
             </div>
         </div>
-
-        <a href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz" class="btn-join" onclick="fbq('track', 'Lead');">
-            ENTRAR NO GRUPO VIP AGORA
-        </a>
-
-        <div class="online-count">
-            <div class="online-dot"></div>
-            <span><b>1.427 pessoas</b> online no grupo</span>
-        </div>
+        <a href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz" class="btn-join" onclick="fbq('track', 'Lead');">ENTRAR NO GRUPO VIP</a>
+        <div class="online-count"><div class="online-dot"></div><span><b>1.427 pessoas</b> economizando agora</span></div>
     </div>
 </body>
 </html>
