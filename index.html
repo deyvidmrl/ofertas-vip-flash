@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FLASH OFERTAS 23 ⚡ | Ofertas e Cupons</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="description" content="Receba alertas de ofertas, cupons e oportunidades encontradas nas principais lojas.">
+    <meta name="theme-color" content="#080808">
+
+    <title>FLASH OFERTAS 23 ⚡ | Mercado Livre + Shopee</title>
+
+    <meta name="description"
+        content="Ofertas, cupons e oportunidades do Mercado Livre e Shopee selecionadas ao longo do dia. Entre gratuitamente no WhatsApp.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="FLASH OFERTAS 23 ⚡">
-    <meta property="og:description" content="Ofertas, cupons e oportunidades encontradas ao longo do dia.">
+    <meta property="og:description"
+        content="Ofertas e cupons do Mercado Livre e Shopee direto no WhatsApp.">
     <meta property="og:type" content="website">
 
-    <!-- Meta Pixel -->
+    <!-- =========================
+         META PIXEL
+    ========================== -->
+
     <script>
-        !function(f,b,e,v,n,t,s)
-        {
-            if(f.fbq)return;
-            n=f.fbq=function(){
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n,arguments) :
-                n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
 
-            if(!f._fbq)f._fbq=n;
+            if (!f._fbq) f._fbq = n;
 
-            n.push=n;
-            n.loaded=!0;
-            n.version='2.0';
-            n.queue=[];
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
 
-            t=b.createElement(e);
-            t.async=!0;
-            t.src=v;
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
 
-            s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)
-        }
-        (window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
 
         fbq('init', '1736558787065660');
         fbq('track', 'PageView');
     </script>
 
     <noscript>
-        <img
-            height="1"
+        <img height="1"
             width="1"
             style="display:none"
-            src="https://www.facebook.com/tr?id=1736558787065660&ev=PageView&noscript=1"
-            alt=""
-        >
+            src="https://www.facebook.com/tr?id=1736558787065660&ev=PageView&noscript=1" />
     </noscript>
+
+    <!-- =========================
+         ESTILO
+    ========================== -->
 
     <style>
 
-        /* =========================
-           RESET
-        ========================= */
+        :root {
+            --green: #25D366;
+            --green-dark: #19b954;
+            --yellow: #FFD83D;
+            --yellow-dark: #e9b900;
+
+            --black: #070707;
+            --black-2: #0d0d0d;
+            --card: #151515;
+            --card-2: #1b1b1b;
+
+            --white: #ffffff;
+            --gray: #a7a7a7;
+            --gray-dark: #707070;
+
+            --red: #ff5252;
+
+            --border: rgba(255,255,255,0.07);
+        }
+
 
         * {
             box-sizing: border-box;
@@ -67,11 +92,15 @@
             padding: 0;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
+            min-height: 100vh;
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -84,440 +113,764 @@
             background:
                 radial-gradient(
                     circle at top,
-                    #101b14 0%,
-                    #080908 35%,
-                    #050505 100%
-                );
+                    rgba(37,211,102,0.09),
+                    transparent 35%
+                ),
+                var(--black);
 
-            color: #ffffff;
-            min-height: 100vh;
+            color: var(--white);
+
+            -webkit-font-smoothing: antialiased;
         }
+
+
+        body::before {
+            content: "";
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                var(--green),
+                transparent
+            );
+
+            opacity: 0.7;
+        }
+
 
         /* =========================
            CONTAINER
-        ========================= */
+        ========================== */
 
-        .lp-container {
+        .page {
             width: 100%;
-            max-width: 470px;
+            max-width: 480px;
+
             margin: 0 auto;
-            padding: 22px 18px 40px;
+
+            padding:
+                22px
+                18px
+                110px;
         }
 
+
         /* =========================
-           HEADER
-        ========================= */
+           LOGO
+        ========================== */
 
         .logo {
             text-align: center;
+
             font-size: 23px;
             font-weight: 950;
-            letter-spacing: -1px;
-            color: #25d366;
-            margin-bottom: 18px;
+
+            letter-spacing: -0.7px;
+
+            color: var(--white);
         }
 
-        .status-badge {
+
+        .logo span {
+            color: var(--green);
+        }
+
+
+        /* =========================
+           STATUS
+        ========================== */
+
+        .status {
             width: fit-content;
-            margin: 0 auto 22px;
 
-            padding: 7px 15px;
+            margin: 13px auto 0;
 
-            border: 1px solid rgba(37, 211, 102, 0.8);
-            border-radius: 999px;
+            padding: 7px 13px;
 
-            background: rgba(37, 211, 102, 0.07);
+            border: 1px solid rgba(37,211,102,0.22);
 
-            color: #25d366;
+            border-radius: 50px;
+
+            background: rgba(37,211,102,0.06);
+
+            color: var(--green);
 
             font-size: 10px;
             font-weight: 800;
-            letter-spacing: .4px;
 
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            letter-spacing: 0.8px;
+
+            text-transform: uppercase;
         }
 
+
         .status-dot {
+            display: inline-block;
+
             width: 6px;
             height: 6px;
 
-            background: #25d366;
+            margin-right: 5px;
+
             border-radius: 50%;
 
-            box-shadow:
-                0 0 8px rgba(37, 211, 102, .8);
+            background: var(--green);
+
+            box-shadow: 0 0 10px var(--green);
         }
+
 
         /* =========================
            HERO
-        ========================= */
+        ========================== */
 
         .hero {
             text-align: center;
-            margin-bottom: 30px;
+
+            padding-top: 28px;
         }
+
 
         .hero h1 {
-            font-size: clamp(25px, 7vw, 31px);
-            line-height: 1.12;
-            font-weight: 900;
-            letter-spacing: -1px;
+            font-size: 31px;
 
-            margin-bottom: 12px;
-        }
+            line-height: 1.05;
 
-        .hero h1 span {
-            color: #f3ce49;
-        }
-
-        .hero-subtitle {
-            color: #8e8e8e;
-            font-size: 13px;
-            line-height: 1.5;
-            max-width: 350px;
-            margin: 0 auto;
-        }
-
-        /* =========================
-           ALERT TITLE
-        ========================= */
-
-        .alerts-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            color: #707070;
-
-            font-size: 11px;
-            font-weight: 700;
-
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-
-            margin-bottom: 13px;
-        }
-
-        .alerts-title::after {
-            content: "";
-
-            height: 1px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #303030,
-                    transparent
-                );
-
-            flex: 1;
-        }
-
-        /* =========================
-           PRODUCTS
-        ========================= */
-
-        .product-list {
-            display: flex;
-            flex-direction: column;
-            gap: 13px;
-
-            margin-bottom: 25px;
-        }
-
-        .p-card {
-            position: relative;
-
-            display: flex;
-            align-items: center;
-
-            width: 100%;
-
-            padding: 11px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    #1d2022,
-                    #17191b
-                );
-
-            border: 1px solid #2c2f31;
-
-            border-radius: 16px;
-
-            box-shadow:
-                0 7px 20px rgba(0,0,0,.25);
-
-            transition:
-                transform .2s ease,
-                border-color .2s ease;
-        }
-
-        .p-card:hover {
-            transform: translateY(-2px);
-            border-color: #3b3e40;
-        }
-
-        /* =========================
-           PRODUCT IMAGE
-        ========================= */
-
-        .p-img {
-            width: 88px;
-            height: 88px;
-
-            flex-shrink: 0;
-
-            margin-right: 13px;
-
-            background: #ffffff;
-
-            border-radius: 12px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            overflow: hidden;
-        }
-
-        .p-img img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: contain;
-        }
-
-        /* =========================
-           PRODUCT CONTENT
-        ========================= */
-
-        .p-content {
-            min-width: 0;
-            flex: 1;
-        }
-
-        .p-tag {
-            display: inline-block;
-
-            padding: 3px 7px;
-
-            margin-bottom: 5px;
-
-            background: #f3ce49;
-
-            color: #050505;
-
-            border-radius: 4px;
-
-            font-size: 8px;
-            line-height: 1;
+            letter-spacing: -1.3px;
 
             font-weight: 950;
-            letter-spacing: .3px;
         }
 
-        .p-name {
-            color: #ffffff;
 
-            font-size: 14px;
-            line-height: 1.25;
-
-            font-weight: 650;
-
-            margin-bottom: 5px;
+        .hero h1 span {
+            color: var(--yellow);
         }
 
-        .p-info {
-            color: #777;
+
+        .hero-subtitle {
+            max-width: 390px;
+
+            margin: 14px auto 0;
+
+            color: var(--gray);
+
+            font-size: 15px;
+
+            line-height: 1.5;
+        }
+
+
+        .marketplaces {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 8px;
+
+            margin-top: 16px;
+        }
+
+
+        .marketplace {
+            padding: 6px 10px;
+
+            border-radius: 7px;
+
+            background: #171717;
+
+            border: 1px solid var(--border);
+
+            font-size: 11px;
+
+            font-weight: 800;
+        }
+
+
+        .marketplace.ml {
+            color: #ffe600;
+        }
+
+
+        .marketplace.sh {
+            color: #ff7043;
+        }
+
+
+        /* =========================
+           DIVISOR
+        ========================== */
+
+        .divider {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin: 30px 0 15px;
+
+            color: var(--gray-dark);
 
             font-size: 10px;
 
-            margin-bottom: 2px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
         }
 
-        .p-prices {
+
+        .divider::before,
+        .divider::after {
+            content: "";
+
+            flex: 1;
+
+            height: 1px;
+
+            background: var(--border);
+        }
+
+
+        /* =========================
+           PRODUCT CARD
+        ========================== */
+
+        .products {
             display: flex;
+
             flex-direction: column;
-            align-items: flex-start;
+
+            gap: 12px;
         }
 
-        .old-p {
-            color: #ff6464;
 
-            font-size: 11px;
-            line-height: 1.1;
-
-            text-decoration: line-through;
-        }
-
-        .new-p {
-            color: #25d366;
-
-            font-size: 22px;
-            line-height: 1.1;
-
-            font-weight: 950;
-
-            letter-spacing: -.5px;
-        }
-
-        /* =========================
-           SAVING
-        ========================= */
-
-        .saving {
-            display: inline-block;
-
-            margin-top: 3px;
-
-            color: #8c8c8c;
-
-            font-size: 9px;
-            font-weight: 600;
-        }
-
-        /* =========================
-           CTA AREA
-        ========================= */
-
-        .cta-area {
-            margin-top: 8px;
-        }
-
-        .btn-join {
+        .product-card {
             position: relative;
 
             display: flex;
-            align-items: center;
-            justify-content: center;
 
-            width: 100%;
+            gap: 13px;
 
-            min-height: 67px;
-
-            padding: 16px 18px;
+            padding: 12px;
 
             border-radius: 17px;
 
             background:
                 linear-gradient(
-                    135deg,
-                    #25d366,
-                    #20c963
+                    145deg,
+                    var(--card-2),
+                    var(--card)
                 );
 
-            color: #ffffff;
+            border: 1px solid var(--border);
+
+            overflow: hidden;
+
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+
+        .product-card:hover {
+            transform: translateY(-2px);
+
+            border-color:
+                rgba(37,211,102,0.22);
+        }
+
+
+        /* brilho lateral */
+
+        .product-card::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 3px;
+            height: 100%;
+
+            background: var(--green);
+
+            opacity: 0.7;
+        }
+
+
+        /* =========================
+           PRODUCT IMAGE
+        ========================== */
+
+        .product-image {
+            flex: 0 0 92px;
+
+            width: 92px;
+            height: 92px;
+
+            border-radius: 12px;
+
+            background: #ffffff;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* =========================
+           PRODUCT INFO
+        ========================== */
+
+        .product-info {
+            min-width: 0;
+
+            flex: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .product-tag {
+            width: fit-content;
+
+            padding: 4px 7px;
+
+            border-radius: 5px;
+
+            background: rgba(255,216,61,0.13);
+
+            color: var(--yellow);
+
+            font-size: 8px;
+
+            font-weight: 900;
+
+            letter-spacing: 0.6px;
+
+            text-transform: uppercase;
+        }
+
+
+        .product-name {
+            margin-top: 6px;
+
+            color: #eeeeee;
+
+            font-size: 13px;
+
+            line-height: 1.25;
+
+            font-weight: 750;
+        }
+
+
+        .price-area {
+            margin-top: 6px;
+
+            display: flex;
+
+            align-items: baseline;
+
+            gap: 7px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .old-price {
+            color: #777777;
+
+            font-size: 10px;
+
+            text-decoration: line-through;
+        }
+
+
+        .new-price {
+            color: var(--green);
+
+            font-size: 21px;
+
+            line-height: 1;
+
+            font-weight: 950;
+
+            letter-spacing: -0.5px;
+        }
+
+
+        .saving {
+            margin-top: 4px;
+
+            color: #8d8d8d;
+
+            font-size: 9px;
+
+            font-weight: 650;
+        }
+
+
+        /* =========================
+           MAIN CTA
+        ========================== */
+
+        .cta-wrapper {
+            margin-top: 23px;
+        }
+
+
+        .main-cta {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
+            min-height: 58px;
+
+            padding: 14px 18px;
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #2be875,
+                    #20c965
+                );
+
+            color: #061008;
 
             text-decoration: none;
 
-            font-size: 19px;
+            font-size: 17px;
+
             font-weight: 950;
 
-            letter-spacing: .2px;
+            letter-spacing: -0.3px;
 
             box-shadow:
-                0 10px 30px rgba(37, 211, 102, .25);
+                0 8px 30px rgba(37,211,102,0.20);
 
             transition:
-                transform .15s ease,
-                box-shadow .15s ease;
+                transform 0.18s ease,
+                box-shadow 0.18s ease;
         }
 
-        .btn-join:hover {
+
+        .main-cta:hover {
             transform: translateY(-2px);
 
             box-shadow:
-                0 14px 35px rgba(37, 211, 102, .32);
+                0 12px 35px rgba(37,211,102,0.28);
         }
 
-        .btn-join:active {
-            transform: scale(.98);
+
+        .main-cta:active {
+            transform: scale(0.98);
         }
 
-        .btn-icon {
-            margin-right: 8px;
-            font-size: 21px;
-        }
 
-        /* =========================
-           TRUST
-        ========================= */
+        .cta-subtitle {
+            margin-top: 8px;
 
-        .trust-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
 
-            gap: 6px;
-
-            margin-top: 14px;
-        }
-
-        .trust-item {
-            color: #777;
+            color: var(--gray-dark);
 
             font-size: 10px;
-            line-height: 1.3;
+        }
+
+
+        /* =========================
+           BENEFITS
+        ========================== */
+
+        .benefits {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 8px;
+
+            margin-top: 18px;
+        }
+
+
+        .benefit {
+            padding: 11px 10px;
+
+            border-radius: 10px;
+
+            background: #101010;
+
+            border: 1px solid var(--border);
+
+            color: #a8a8a8;
+
+            font-size: 10px;
+
+            line-height: 1.35;
+        }
+
+
+        .benefit strong {
+            display: block;
+
+            margin-bottom: 2px;
+
+            color: #e8e8e8;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================
+           HOW IT WORKS
+        ========================== */
+
+        .how {
+            margin-top: 28px;
+
+            padding: 17px;
+
+            border-radius: 15px;
+
+            background: #101010;
+
+            border: 1px solid var(--border);
+        }
+
+
+        .how-title {
+            margin-bottom: 13px;
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            color: #eeeeee;
+        }
+
+
+        .step {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            margin-top: 11px;
+        }
+
+
+        .step-number {
+            flex: 0 0 23px;
+
+            width: 23px;
+            height: 23px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(37,211,102,0.12);
+
+            color: var(--green);
+
+            font-size: 10px;
+
+            font-weight: 900;
+        }
+
+
+        .step-text {
+            color: #929292;
+
+            font-size: 11px;
+
+            line-height: 1.4;
+        }
+
+
+        .step-text strong {
+            color: #dddddd;
+        }
+
+
+        /* =========================
+           NOTICE
+        ========================== */
+
+        .notice {
+            margin-top: 18px;
+
+            padding: 12px 13px;
+
+            border-radius: 10px;
+
+            background: rgba(255,216,61,0.05);
+
+            border: 1px solid rgba(255,216,61,0.10);
+
+            color: #8d8d8d;
+
+            font-size: 9px;
+
+            line-height: 1.5;
 
             text-align: center;
         }
 
-        .trust-item strong {
-            color: #a4a4a4;
-        }
 
         /* =========================
            FOOTER
-        ========================= */
+        ========================== */
 
-        .footer {
+        footer {
+            margin-top: 22px;
+
             text-align: center;
 
-            margin-top: 30px;
-
-            color: #4f4f4f;
+            color: #555555;
 
             font-size: 9px;
+
             line-height: 1.5;
         }
 
+
         /* =========================
-           MOBILE
-        ========================= */
+           STICKY MOBILE CTA
+        ========================== */
 
-        @media (max-width: 380px) {
+        .sticky-cta {
+            position: fixed;
 
-            .lp-container {
-                padding-left: 13px;
-                padding-right: 13px;
-            }
+            z-index: 100;
 
-            .p-img {
-                width: 78px;
-                height: 78px;
-                margin-right: 10px;
-            }
+            left: 50%;
 
-            .p-name {
-                font-size: 13px;
-            }
+            bottom: 10px;
 
-            .new-p {
-                font-size: 20px;
-            }
+            transform: translateX(-50%);
 
-            .btn-join {
-                font-size: 17px;
-            }
+            width: calc(100% - 28px);
+
+            max-width: 452px;
+
+            padding: 7px;
+
+            border-radius: 15px;
+
+            background:
+                rgba(15,15,15,0.92);
+
+            border:
+                1px solid rgba(255,255,255,0.08);
+
+            backdrop-filter: blur(12px);
+
+            -webkit-backdrop-filter: blur(12px);
+
+            box-shadow:
+                0 10px 40px rgba(0,0,0,0.5);
         }
 
+
+        .sticky-cta a {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 48px;
+
+            border-radius: 10px;
+
+            background: var(--green);
+
+            color: #061008;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            font-weight: 950;
+        }
+
+
         /* =========================
-           REDUCE MOTION
-        ========================= */
+           MOBILE
+        ========================== */
+
+        @media (max-width: 360px) {
+
+            .page {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+
+            .product-image {
+                flex-basis: 80px;
+
+                width: 80px;
+                height: 80px;
+            }
+
+
+            .new-price {
+                font-size: 19px;
+            }
+
+        }
+
+
+        /* =========================
+           REDUZIR ANIMAÇÕES
+        ========================== */
 
         @media (prefers-reduced-motion: reduce) {
 
@@ -529,308 +882,472 @@
             *::before,
             *::after {
                 transition: none !important;
-                animation: none !important;
             }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
-    <main class="lp-container">
 
-        <!-- =====================
-             HEADER
-        ====================== -->
+    <!-- =========================
+         PAGE
+    ========================== -->
 
-        <header>
-
-            <div class="logo">
-                FLASH OFERTAS 23 ⚡
-            </div>
-
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                MONITORAMENTO ATIVO
-            </div>
-
-        </header>
+    <main class="page">
 
 
-        <!-- =====================
-             HERO
-        ====================== -->
+        <!-- LOGO -->
+
+        <div class="logo">
+            FLASH OFERTAS <span>23⚡</span>
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Monitoramento ativo
+        </div>
+
+
+        <!-- HERO -->
 
         <section class="hero">
 
             <h1>
-                🔥 Ofertas que podem
-                <span>sumir a qualquer momento</span>
+                🔥 OFERTAS QUE
+                <span>VALEM A PENA</span>
             </h1>
 
+
             <p class="hero-subtitle">
-                Preços, cupons e oportunidades encontrados
-                ao longo do dia.
+                Cupons, descontos e oportunidades
+                encontradas no
+                <strong>Mercado Livre</strong> e
+                <strong>Shopee</strong>.
             </p>
 
-        </section>
 
+            <div class="marketplaces">
 
-        <!-- =====================
-             ALERTS
-        ====================== -->
+                <div class="marketplace ml">
+                    🛒 Mercado Livre
+                </div>
 
-        <section>
-
-            <div class="alerts-title">
-                Alertas do dia
-            </div>
-
-
-            <div class="product-list">
-
-
-                <!-- =====================
-                     IPHONE
-                ====================== -->
-
-                <article class="p-card">
-
-                    <div class="p-img">
-                        <img
-                            src="iphone.jpg"
-                            alt="iPhone 13 Apple 128GB"
-                            loading="eager"
-                        >
-                    </div>
-
-                    <div class="p-content">
-
-                        <span class="p-tag">
-                            ERRO DE PREÇO
-                        </span>
-
-                        <div class="p-name">
-                            iPhone 13 Apple (128GB) Meia-noite
-                        </div>
-
-                        <div class="p-info">
-                            Oferta encontrada hoje
-                        </div>
-
-                        <div class="p-prices">
-
-                            <span class="old-p">
-                                R$ 4.299
-                            </span>
-
-                            <span class="new-p">
-                                R$ 2.440
-                            </span>
-
-                            <span class="saving">
-                                Economia de R$ 1.859
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- =====================
-                     BOSCH
-                ====================== -->
-
-                <article class="p-card">
-
-                    <div class="p-img">
-                        <img
-                            src="bosch.jpg"
-                            alt="Maleta de ferramentas Bosch 142 peças"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="p-content">
-
-                        <span class="p-tag">
-                            CUPOM 75% OFF
-                        </span>
-
-                        <div class="p-name">
-                            Maleta Ferramentas Bosch 142 pçs
-                        </div>
-
-                        <div class="p-info">
-                            Cupom disponível
-                        </div>
-
-                        <div class="p-prices">
-
-                            <span class="old-p">
-                                R$ 549
-                            </span>
-
-                            <span class="new-p">
-                                R$ 137
-                            </span>
-
-                            <span class="saving">
-                                Economia de R$ 412
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- =====================
-                     COOKTOP
-                ====================== -->
-
-                <article class="p-card">
-
-                    <div class="p-img">
-                        <img
-                            src="cooktop.jpg"
-                            alt="Cooktop 5 bocas de vidro temperado"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="p-content">
-
-                        <span class="p-tag">
-                            OFERTA RELÂMPAGO
-                        </span>
-
-                        <div class="p-name">
-                            Cooktop 5 Bocas Vidro Temperado
-                        </div>
-
-                        <div class="p-info">
-                            Preço promocional
-                        </div>
-
-                        <div class="p-prices">
-
-                            <span class="old-p">
-                                R$ 689
-                            </span>
-
-                            <span class="new-p">
-                                R$ 247
-                            </span>
-
-                            <span class="saving">
-                                Economia de R$ 442
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
+                <div class="marketplace sh">
+                    🛍️ Shopee
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =====================
+        <!-- DIVISOR -->
+
+        <div class="divider">
+            Exemplos de oportunidades
+        </div>
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <section class="products">
+
+
+            <!-- IPHONE -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="iphone.jpg"
+                        alt="iPhone 13 128GB"
+                        loading="eager"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="product-tag">
+                        Oferta encontrada
+                    </span>
+
+
+                    <div class="product-name">
+                        iPhone 13 Apple
+                        128GB Meia-noite
+                    </div>
+
+
+                    <div class="price-area">
+
+                        <span class="old-price">
+                            R$ 4.299
+                        </span>
+
+                        <span class="new-price">
+                            R$ 2.440
+                        </span>
+
+                    </div>
+
+
+                    <div class="saving">
+                        Economia de R$ 1.859
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BOSCH -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="bosch.jpg"
+                        alt="Kit de ferramentas Bosch"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="product-tag">
+                        Cupom disponível
+                    </span>
+
+
+                    <div class="product-name">
+                        Maleta de Ferramentas
+                        Bosch 142 peças
+                    </div>
+
+
+                    <div class="price-area">
+
+                        <span class="old-price">
+                            R$ 549
+                        </span>
+
+                        <span class="new-price">
+                            R$ 137
+                        </span>
+
+                    </div>
+
+
+                    <div class="saving">
+                        Economia de R$ 412
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- COOKTOP -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="cooktop.jpg"
+                        alt="Cooktop 5 bocas"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="product-tag">
+                        Oferta relâmpago
+                    </span>
+
+
+                    <div class="product-name">
+                        Cooktop 5 Bocas
+                        Vidro Temperado
+                    </div>
+
+
+                    <div class="price-area">
+
+                        <span class="old-price">
+                            R$ 689
+                        </span>
+
+                        <span class="new-price">
+                            R$ 247
+                        </span>
+
+                    </div>
+
+
+                    <div class="saving">
+                        Economia de R$ 442
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- =========================
              CTA
-        ====================== -->
+        ========================== -->
 
-        <section class="cta-area">
+        <section class="cta-wrapper">
 
             <a
                 href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz"
-                class="btn-join"
+                class="main-cta"
                 target="_blank"
                 rel="noopener noreferrer"
-                onclick="fbq('track', 'Contact');"
+                onclick="trackWhatsAppClick()"
             >
-
-                <span class="btn-icon">
-                    ⚡
-                </span>
-
-                RECEBER OFERTAS NO WHATSAPP
-
+                ⚡ RECEBER OFERTAS NO WHATSAPP
             </a>
 
 
-            <div class="trust-list">
-
-                <div class="trust-item">
-                    🔒 <strong>Entrada gratuita</strong>
-                </div>
-
-                <div class="trust-item">
-                    📲 Alertas de ofertas e cupons
-                </div>
-
-                <div class="trust-item">
-                    ⚡ Preços e estoque podem mudar a qualquer momento
-                </div>
-
+            <div class="cta-subtitle">
+                Entrada gratuita • Saia quando quiser
             </div>
 
         </section>
 
 
-        <!-- =====================
+        <!-- =========================
+             BENEFITS
+        ========================== -->
+
+        <section class="benefits">
+
+
+            <div class="benefit">
+
+                <strong>💰 Cupons e descontos</strong>
+
+                Oportunidades selecionadas
+                ao longo do dia.
+
+            </div>
+
+
+            <div class="benefit">
+
+                <strong>📲 Direto no WhatsApp</strong>
+
+                Receba os alertas sem precisar
+                ficar procurando.
+
+            </div>
+
+
+            <div class="benefit">
+
+                <strong>🛒 Mercado Livre</strong>
+
+                Ofertas e oportunidades
+                encontradas na plataforma.
+
+            </div>
+
+
+            <div class="benefit">
+
+                <strong>🛍️ Shopee</strong>
+
+                Produtos, cupons e
+                promoções selecionadas.
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section class="how">
+
+            <div class="how-title">
+                ⚡ Como funciona?
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <div class="step-text">
+                    <strong>Entre gratuitamente</strong><br>
+                    Clique no botão e entre no grupo do WhatsApp.
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <div class="step-text">
+                    <strong>Receba as oportunidades</strong><br>
+                    Os alertas chegam diretamente no seu celular.
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <div class="step-text">
+                    <strong>Escolha o que interessa</strong><br>
+                    Você decide se quer aproveitar cada oferta.
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             NOTICE
+        ========================== -->
+
+        <div class="notice">
+
+            ⚠️ Preços, cupons, estoque e condições das
+            ofertas podem mudar ou acabar a qualquer momento.
+            Sempre confira as condições no site da loja antes
+            de finalizar a compra.
+
+        </div>
+
+
+        <!-- =========================
              FOOTER
-        ====================== -->
+        ========================== -->
 
-        <footer class="footer">
+        <footer>
 
-            As ofertas e preços exibidos podem sofrer alterações,
-            depender de estoque, cupons ou condições específicas
-            da loja.
+            FLASH OFERTAS 23 ⚡
+
+            <br>
+
+            Ofertas e oportunidades selecionadas.
 
         </footer>
+
 
     </main>
 
 
+
     <!-- =========================
-         PIXEL - CLIQUE NO WHATSAPP
-    ========================= -->
+         STICKY CTA
+    ========================== -->
+
+    <div class="sticky-cta">
+
+        <a
+            href="https://chat.whatsapp.com/CWK1ZpdKCzJ7pTNY7QLnvz"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackWhatsAppClick()"
+        >
+            ⚡ RECEBER OFERTAS GRÁTIS
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         TRACKING
+    ========================== -->
 
     <script>
 
-        const whatsappButton =
-            document.querySelector('.btn-join');
+        function trackWhatsAppClick() {
 
-        if (whatsappButton) {
+            /*
+             * Contact = pessoa clicou para entrar
+             * Não estamos chamando isso de Lead confirmado,
+             * porque o clique não garante que ela entrou no grupo.
+             */
 
-            whatsappButton.addEventListener('click', function () {
+            if (typeof fbq === "function") {
 
-                if (typeof fbq === 'function') {
+                fbq(
+                    "track",
+                    "Contact"
+                );
 
-                    fbq(
-                        'track',
-                        'Contact',
-                        {
-                            content_name: 'Grupo VIP de Ofertas',
-                            content_category: 'WhatsApp'
-                        }
-                    );
+            }
 
-                }
 
-            });
+            /*
+             * Google Analytics / GTM
+             * Caso você adicione futuramente.
+             */
+
+            if (
+                typeof window.dataLayer !== "undefined"
+            ) {
+
+                window.dataLayer.push({
+
+                    event: "whatsapp_click",
+
+                    destination: "whatsapp_group"
+
+                });
+
+            }
 
         }
 
     </script>
 
+
 </body>
+
 </html>
