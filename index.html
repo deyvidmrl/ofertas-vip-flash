@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -20,6 +21,7 @@
         content="Ofertas e cupons do Mercado Livre e Shopee direto no WhatsApp.">
     <meta property="og:type" content="website">
 
+
     <!-- =========================
          META PIXEL
     ========================== -->
@@ -29,7 +31,8 @@
             if (f.fbq) return;
             n = f.fbq = function () {
                 n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) :
+                    n.queue.push(arguments)
             };
 
             if (!f._fbq) f._fbq = n;
@@ -44,20 +47,29 @@
             t.src = v;
 
             s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
+            s.parentNode.insertBefore(t, s);
+
+        }(
+            window,
+            document,
+            'script',
+            'https://connect.facebook.net/en_US/fbevents.js'
+        );
 
         fbq('init', '1736558787065660');
         fbq('track', 'PageView');
     </script>
 
+
     <noscript>
-        <img height="1"
+        <img
+            height="1"
             width="1"
             style="display:none"
-            src="https://www.facebook.com/tr?id=1736558787065660&ev=PageView&noscript=1" />
+            src="https://www.facebook.com/tr?id=1736558787065660&ev=PageView&noscript=1"
+        />
     </noscript>
+
 
     <!-- =========================
          ESTILO
@@ -66,17 +78,21 @@
     <style>
 
         :root {
+
             --green: #25D366;
             --green-dark: #19b954;
+
             --yellow: #FFD83D;
             --yellow-dark: #e9b900;
 
             --black: #070707;
             --black-2: #0d0d0d;
+
             --card: #151515;
             --card-2: #1b1b1b;
 
             --white: #ffffff;
+
             --gray: #a7a7a7;
             --gray-dark: #707070;
 
@@ -99,6 +115,7 @@
 
 
         body {
+
             min-height: 100vh;
 
             font-family:
@@ -125,6 +142,7 @@
 
 
         body::before {
+
             content: "";
 
             position: fixed;
@@ -135,14 +153,17 @@
             width: 100%;
             height: 1px;
 
-            background: linear-gradient(
-                90deg,
-                transparent,
-                var(--green),
-                transparent
-            );
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    var(--green),
+                    transparent
+                );
 
             opacity: 0.7;
+
+            pointer-events: none;
         }
 
 
@@ -151,6 +172,7 @@
         ========================== */
 
         .page {
+
             width: 100%;
             max-width: 480px;
 
@@ -168,9 +190,11 @@
         ========================== */
 
         .logo {
+
             text-align: center;
 
             font-size: 23px;
+
             font-weight: 950;
 
             letter-spacing: -0.7px;
@@ -189,21 +213,26 @@
         ========================== */
 
         .status {
+
             width: fit-content;
 
             margin: 13px auto 0;
 
             padding: 7px 13px;
 
-            border: 1px solid rgba(37,211,102,0.22);
+            border:
+                1px solid
+                rgba(37,211,102,0.22);
 
             border-radius: 50px;
 
-            background: rgba(37,211,102,0.06);
+            background:
+                rgba(37,211,102,0.06);
 
             color: var(--green);
 
             font-size: 10px;
+
             font-weight: 800;
 
             letter-spacing: 0.8px;
@@ -213,6 +242,7 @@
 
 
         .status-dot {
+
             display: inline-block;
 
             width: 6px;
@@ -224,7 +254,8 @@
 
             background: var(--green);
 
-            box-shadow: 0 0 10px var(--green);
+            box-shadow:
+                0 0 10px var(--green);
         }
 
 
@@ -233,6 +264,7 @@
         ========================== */
 
         .hero {
+
             text-align: center;
 
             padding-top: 28px;
@@ -240,6 +272,7 @@
 
 
         .hero h1 {
+
             font-size: 31px;
 
             line-height: 1.05;
@@ -256,6 +289,7 @@
 
 
         .hero-subtitle {
+
             max-width: 390px;
 
             margin: 14px auto 0;
@@ -268,10 +302,17 @@
         }
 
 
+        .hero-subtitle strong {
+            color: #eeeeee;
+        }
+
+
         .marketplaces {
+
             display: flex;
 
             justify-content: center;
+
             align-items: center;
 
             gap: 8px;
@@ -281,13 +322,16 @@
 
 
         .marketplace {
+
             padding: 6px 10px;
 
             border-radius: 7px;
 
             background: #171717;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid
+                var(--border);
 
             font-size: 11px;
 
@@ -310,6 +354,7 @@
         ========================== */
 
         .divider {
+
             display: flex;
 
             align-items: center;
@@ -332,6 +377,7 @@
 
         .divider::before,
         .divider::after {
+
             content: "";
 
             flex: 1;
@@ -343,10 +389,11 @@
 
 
         /* =========================
-           PRODUCT CARD
+           PRODUCTS
         ========================== */
 
         .products {
+
             display: flex;
 
             flex-direction: column;
@@ -356,6 +403,7 @@
 
 
         .product-card {
+
             position: relative;
 
             display: flex;
@@ -373,7 +421,9 @@
                     var(--card)
                 );
 
-            border: 1px solid var(--border);
+            border:
+                1px solid
+                var(--border);
 
             overflow: hidden;
 
@@ -384,6 +434,7 @@
 
 
         .product-card:hover {
+
             transform: translateY(-2px);
 
             border-color:
@@ -394,6 +445,7 @@
         /* brilho lateral */
 
         .product-card::before {
+
             content: "";
 
             position: absolute;
@@ -415,6 +467,7 @@
         ========================== */
 
         .product-image {
+
             flex: 0 0 92px;
 
             width: 92px;
@@ -422,18 +475,20 @@
 
             border-radius: 12px;
 
-            background: #ffffff;
+            background: transparent;
 
             overflow: hidden;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
         }
 
 
         .product-image img {
+
             width: 100%;
             height: 100%;
 
@@ -448,6 +503,7 @@
         ========================== */
 
         .product-info {
+
             min-width: 0;
 
             flex: 1;
@@ -461,13 +517,15 @@
 
 
         .product-tag {
+
             width: fit-content;
 
             padding: 4px 7px;
 
             border-radius: 5px;
 
-            background: rgba(255,216,61,0.13);
+            background:
+                rgba(255,216,61,0.13);
 
             color: var(--yellow);
 
@@ -482,6 +540,7 @@
 
 
         .product-name {
+
             margin-top: 6px;
 
             color: #eeeeee;
@@ -495,6 +554,7 @@
 
 
         .price-area {
+
             margin-top: 6px;
 
             display: flex;
@@ -508,6 +568,7 @@
 
 
         .old-price {
+
             color: #777777;
 
             font-size: 10px;
@@ -517,6 +578,7 @@
 
 
         .new-price {
+
             color: var(--green);
 
             font-size: 21px;
@@ -530,6 +592,7 @@
 
 
         .saving {
+
             margin-top: 4px;
 
             color: #8d8d8d;
@@ -545,16 +608,19 @@
         ========================== */
 
         .cta-wrapper {
+
             margin-top: 23px;
         }
 
 
         .main-cta {
+
             position: relative;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             width: 100%;
@@ -583,7 +649,8 @@
             letter-spacing: -0.3px;
 
             box-shadow:
-                0 8px 30px rgba(37,211,102,0.20);
+                0 8px 30px
+                rgba(37,211,102,0.20);
 
             transition:
                 transform 0.18s ease,
@@ -592,19 +659,23 @@
 
 
         .main-cta:hover {
+
             transform: translateY(-2px);
 
             box-shadow:
-                0 12px 35px rgba(37,211,102,0.28);
+                0 12px 35px
+                rgba(37,211,102,0.28);
         }
 
 
         .main-cta:active {
+
             transform: scale(0.98);
         }
 
 
         .cta-subtitle {
+
             margin-top: 8px;
 
             text-align: center;
@@ -620,6 +691,7 @@
         ========================== */
 
         .benefits {
+
             display: grid;
 
             grid-template-columns: 1fr 1fr;
@@ -631,13 +703,16 @@
 
 
         .benefit {
+
             padding: 11px 10px;
 
             border-radius: 10px;
 
             background: #101010;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid
+                var(--border);
 
             color: #a8a8a8;
 
@@ -648,6 +723,7 @@
 
 
         .benefit strong {
+
             display: block;
 
             margin-bottom: 2px;
@@ -663,6 +739,7 @@
         ========================== */
 
         .how {
+
             margin-top: 28px;
 
             padding: 17px;
@@ -671,11 +748,14 @@
 
             background: #101010;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid
+                var(--border);
         }
 
 
         .how-title {
+
             margin-bottom: 13px;
 
             font-size: 13px;
@@ -687,6 +767,7 @@
 
 
         .step {
+
             display: flex;
 
             align-items: flex-start;
@@ -698,6 +779,7 @@
 
 
         .step-number {
+
             flex: 0 0 23px;
 
             width: 23px;
@@ -706,11 +788,13 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             border-radius: 50%;
 
-            background: rgba(37,211,102,0.12);
+            background:
+                rgba(37,211,102,0.12);
 
             color: var(--green);
 
@@ -721,6 +805,7 @@
 
 
         .step-text {
+
             color: #929292;
 
             font-size: 11px;
@@ -739,15 +824,19 @@
         ========================== */
 
         .notice {
+
             margin-top: 18px;
 
             padding: 12px 13px;
 
             border-radius: 10px;
 
-            background: rgba(255,216,61,0.05);
+            background:
+                rgba(255,216,61,0.05);
 
-            border: 1px solid rgba(255,216,61,0.10);
+            border:
+                1px solid
+                rgba(255,216,61,0.10);
 
             color: #8d8d8d;
 
@@ -764,6 +853,7 @@
         ========================== */
 
         footer {
+
             margin-top: 22px;
 
             text-align: center;
@@ -777,10 +867,11 @@
 
 
         /* =========================
-           STICKY MOBILE CTA
+           STICKY CTA
         ========================== */
 
         .sticky-cta {
+
             position: fixed;
 
             z-index: 100;
@@ -803,28 +894,37 @@
                 rgba(15,15,15,0.92);
 
             border:
-                1px solid rgba(255,255,255,0.08);
+                1px solid
+                rgba(255,255,255,0.08);
 
             backdrop-filter: blur(12px);
 
             -webkit-backdrop-filter: blur(12px);
 
             box-shadow:
-                0 10px 40px rgba(0,0,0,0.5);
+                0 10px 40px
+                rgba(0,0,0,0.5);
         }
 
 
         .sticky-cta a {
+
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             min-height: 48px;
 
             border-radius: 10px;
 
-            background: var(--green);
+            background:
+                linear-gradient(
+                    180deg,
+                    #2be875,
+                    #20c965
+                );
 
             color: #061008;
 
@@ -833,6 +933,15 @@
             font-size: 13px;
 
             font-weight: 950;
+
+            transition:
+                transform 0.15s ease;
+        }
+
+
+        .sticky-cta a:active {
+
+            transform: scale(0.98);
         }
 
 
@@ -843,28 +952,39 @@
         @media (max-width: 360px) {
 
             .page {
+
                 padding-left: 14px;
+
                 padding-right: 14px;
             }
 
 
             .hero h1 {
+
                 font-size: 27px;
             }
 
 
             .product-image {
+
                 flex-basis: 80px;
 
                 width: 80px;
+
                 height: 80px;
             }
 
 
             .new-price {
+
                 font-size: 19px;
             }
 
+
+            .main-cta {
+
+                font-size: 15px;
+            }
         }
 
 
@@ -875,15 +995,17 @@
         @media (prefers-reduced-motion: reduce) {
 
             html {
+
                 scroll-behavior: auto;
             }
+
 
             *,
             *::before,
             *::after {
+
                 transition: none !important;
             }
-
         }
 
     </style>
@@ -911,8 +1033,11 @@
         <!-- STATUS -->
 
         <div class="status">
+
             <span class="status-dot"></span>
+
             Monitoramento ativo
+
         </div>
 
 
@@ -921,27 +1046,36 @@
         <section class="hero">
 
             <h1>
+
                 🔥 OFERTAS QUE
                 <span>VALEM A PENA</span>
+
             </h1>
 
 
             <p class="hero-subtitle">
+
                 Cupons, descontos e oportunidades
                 encontradas no
                 <strong>Mercado Livre</strong> e
                 <strong>Shopee</strong>.
+
             </p>
 
 
             <div class="marketplaces">
 
                 <div class="marketplace ml">
+
                     🛒 Mercado Livre
+
                 </div>
 
+
                 <div class="marketplace sh">
+
                     🛍️ Shopee
+
                 </div>
 
             </div>
@@ -952,7 +1086,9 @@
         <!-- DIVISOR -->
 
         <div class="divider">
+
             Exemplos de oportunidades
+
         </div>
 
 
@@ -981,37 +1117,47 @@
                 <div class="product-info">
 
                     <span class="product-tag">
+
                         Oferta encontrada
+
                     </span>
 
 
                     <div class="product-name">
+
                         iPhone 13 Apple
                         128GB Meia-noite
+
                     </div>
 
 
                     <div class="price-area">
 
                         <span class="old-price">
+
                             R$ 4.299
+
                         </span>
 
+
                         <span class="new-price">
+
                             R$ 2.440
+
                         </span>
 
                     </div>
 
 
                     <div class="saving">
+
                         Economia de R$ 1.859
+
                     </div>
 
                 </div>
 
             </article>
-
 
 
             <!-- BOSCH -->
@@ -1032,37 +1178,47 @@
                 <div class="product-info">
 
                     <span class="product-tag">
+
                         Cupom disponível
+
                     </span>
 
 
                     <div class="product-name">
+
                         Maleta de Ferramentas
                         Bosch 142 peças
+
                     </div>
 
 
                     <div class="price-area">
 
                         <span class="old-price">
+
                             R$ 549
+
                         </span>
 
+
                         <span class="new-price">
+
                             R$ 137
+
                         </span>
 
                     </div>
 
 
                     <div class="saving">
+
                         Economia de R$ 412
+
                     </div>
 
                 </div>
 
             </article>
-
 
 
             <!-- COOKTOP -->
@@ -1083,31 +1239,42 @@
                 <div class="product-info">
 
                     <span class="product-tag">
+
                         Oferta relâmpago
+
                     </span>
 
 
                     <div class="product-name">
+
                         Cooktop 5 Bocas
                         Vidro Temperado
+
                     </div>
 
 
                     <div class="price-area">
 
                         <span class="old-price">
+
                             R$ 689
+
                         </span>
 
+
                         <span class="new-price">
+
                             R$ 247
+
                         </span>
 
                     </div>
 
 
                     <div class="saving">
+
                         Economia de R$ 442
+
                     </div>
 
                 </div>
@@ -1119,21 +1286,29 @@
 
 
         <!-- =========================
-             CTA
+             CTA PRINCIPAL
         ========================== -->
 
         <section class="cta-wrapper">
 
-          <a href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn-join">
-   ⚡ RECEBER OFERTAS NO WHATSAPP
-</a>
+
+            <a
+                href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="main-cta"
+                onclick="trackWhatsAppClick()"
+            >
+
+                ⚡ RECEBER OFERTAS NO WHATSAPP
+
+            </a>
 
 
             <div class="cta-subtitle">
+
                 Entrada gratuita • Saia quando quiser
+
             </div>
 
         </section>
@@ -1148,7 +1323,9 @@
 
             <div class="benefit">
 
-                <strong>💰 Cupons e descontos</strong>
+                <strong>
+                    💰 Cupons e descontos
+                </strong>
 
                 Oportunidades selecionadas
                 ao longo do dia.
@@ -1158,7 +1335,9 @@
 
             <div class="benefit">
 
-                <strong>📲 Direto no WhatsApp</strong>
+                <strong>
+                    📲 Direto no WhatsApp
+                </strong>
 
                 Receba os alertas sem precisar
                 ficar procurando.
@@ -1168,7 +1347,9 @@
 
             <div class="benefit">
 
-                <strong>🛒 Mercado Livre</strong>
+                <strong>
+                    🛒 Mercado Livre
+                </strong>
 
                 Ofertas e oportunidades
                 encontradas na plataforma.
@@ -1178,7 +1359,9 @@
 
             <div class="benefit">
 
-                <strong>🛍️ Shopee</strong>
+                <strong>
+                    🛍️ Shopee
+                </strong>
 
                 Produtos, cupons e
                 promoções selecionadas.
@@ -1195,8 +1378,11 @@
 
         <section class="how">
 
+
             <div class="how-title">
+
                 ⚡ Como funciona?
+
             </div>
 
 
@@ -1206,9 +1392,18 @@
                     1
                 </div>
 
+
                 <div class="step-text">
-                    <strong>Entre gratuitamente</strong><br>
-                    Clique no botão e entre no grupo do WhatsApp.
+
+                    <strong>
+                        Entre gratuitamente
+                    </strong>
+
+                    <br>
+
+                    Clique no botão e entre
+                    no grupo do WhatsApp.
+
                 </div>
 
             </div>
@@ -1220,9 +1415,18 @@
                     2
                 </div>
 
+
                 <div class="step-text">
-                    <strong>Receba as oportunidades</strong><br>
-                    Os alertas chegam diretamente no seu celular.
+
+                    <strong>
+                        Receba as oportunidades
+                    </strong>
+
+                    <br>
+
+                    Os alertas chegam
+                    diretamente no seu celular.
+
                 </div>
 
             </div>
@@ -1234,9 +1438,18 @@
                     3
                 </div>
 
+
                 <div class="step-text">
-                    <strong>Escolha o que interessa</strong><br>
-                    Você decide se quer aproveitar cada oferta.
+
+                    <strong>
+                        Escolha o que interessa
+                    </strong>
+
+                    <br>
+
+                    Você decide se quer
+                    aproveitar cada oferta.
+
                 </div>
 
             </div>
@@ -1251,10 +1464,12 @@
 
         <div class="notice">
 
-            ⚠️ Preços, cupons, estoque e condições das
-            ofertas podem mudar ou acabar a qualquer momento.
-            Sempre confira as condições no site da loja antes
-            de finalizar a compra.
+            ⚠️ Preços, cupons, estoque e condições
+            das ofertas podem mudar ou acabar
+            a qualquer momento.
+
+            Sempre confira as condições no site
+            da loja antes de finalizar a compra.
 
         </div>
 
@@ -1277,24 +1492,26 @@
     </main>
 
 
-
     <!-- =========================
          STICKY CTA
     ========================== -->
 
-  <div class="sticky-cta">
+    <div class="sticky-cta">
 
-    <a
-        href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="trackWhatsAppClick()"
-    >
-        ⚡ RECEBER OFERTAS GRÁTIS
-    </a>
 
-</div>
+        <a
+            href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackWhatsAppClick()"
+        >
 
+            ⚡ RECEBER OFERTAS E CUPONS
+
+        </a>
+
+
+    </div>
 
 
     <!-- =========================
@@ -1306,9 +1523,13 @@
         function trackWhatsAppClick() {
 
             /*
-             * Contact = pessoa clicou para entrar
-             * Não estamos chamando isso de Lead confirmado,
-             * porque o clique não garante que ela entrou no grupo.
+             * Registra o clique no Meta Pixel.
+             *
+             * O evento Contact representa
+             * a intenção de contato/clique.
+             *
+             * O clique não garante que a pessoa
+             * entrou efetivamente no grupo.
              */
 
             if (typeof fbq === "function") {
@@ -1322,8 +1543,9 @@
 
 
             /*
-             * Google Analytics / GTM
-             * Caso você adicione futuramente.
+             * DataLayer
+             * Para usar futuramente com
+             * Google Tag Manager / Analytics.
              */
 
             if (
