@@ -1,1535 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <meta name="theme-color" content="#080808">
-
-    <title>FLASH OFERTAS 23 ⚡ | Mercado Livre + Shopee</title>
-
-    <meta name="description"
-        content="Assine o grupo Flash Ofertas 23 por R$ 4,90 por mês e receba uma seleção de ofertas e cupons do Mercado Livre e Shopee no WhatsApp.">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="FLASH OFERTAS 23 ⚡">
-    <meta property="og:description"
-        content="Grupo de ofertas no WhatsApp por R$ 4,90 por mês. Ofertas e cupons selecionados do Mercado Livre e Shopee.">
-    <meta property="og:type" content="website">
-
-
-    <!-- =========================
-         META PIXEL
-    ========================== -->
-
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) :
-                    n.queue.push(arguments)
-            };
-
-            if (!f._fbq) f._fbq = n;
-
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s);
-
-        }(
-            window,
-            document,
-            'script',
-            'https://connect.facebook.net/en_US/fbevents.js'
-        );
-
-        fbq('init', '1736558787065660');
-        fbq('track', 'PageView');
-    </script>
-
-
-    <noscript>
-        <img
-            height="1"
-            width="1"
-            style="display:none"
-            src="https://www.facebook.com/tr?id=1736558787065660&ev=PageView&noscript=1"
-        />
-    </noscript>
-
-
-    <!-- =========================
-         ESTILO
-    ========================== -->
-
-    <style>
-
-        :root {
-
-            --green: #25D366;
-            --green-dark: #19b954;
-
-            --yellow: #FFD83D;
-            --yellow-dark: #e9b900;
-
-            --black: #070707;
-            --black-2: #0d0d0d;
-
-            --card: #151515;
-            --card-2: #1b1b1b;
-
-            --white: #ffffff;
-
-            --gray: #a7a7a7;
-            --gray-dark: #707070;
-
-            --red: #ff5252;
-
-            --border: rgba(255,255,255,0.07);
-        }
-
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-
-        body {
-
-            min-height: 100vh;
-
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            background:
-                radial-gradient(
-                    circle at top,
-                    rgba(37,211,102,0.09),
-                    transparent 35%
-                ),
-                var(--black);
-
-            color: var(--white);
-
-            -webkit-font-smoothing: antialiased;
-        }
-
-
-        body::before {
-
-            content: "";
-
-            position: fixed;
-
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 1px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    transparent,
-                    var(--green),
-                    transparent
-                );
-
-            opacity: 0.7;
-
-            pointer-events: none;
-        }
-
-
-        /* =========================
-           CONTAINER
-        ========================== */
-
-        .page {
-
-            width: 100%;
-            max-width: 480px;
-
-            margin: 0 auto;
-
-            padding:
-                22px
-                18px
-                110px;
-        }
-
-
-        /* =========================
-           LOGO
-        ========================== */
-
-        .logo {
-
-            text-align: center;
-
-            font-size: 23px;
-
-            font-weight: 950;
-
-            letter-spacing: -0.7px;
-
-            color: var(--white);
-        }
-
-
-        .logo span {
-            color: var(--green);
-        }
-
-
-        /* =========================
-           STATUS
-        ========================== */
-
-        .status {
-
-            width: fit-content;
-
-            margin: 13px auto 0;
-
-            padding: 7px 13px;
-
-            border:
-                1px solid
-                rgba(37,211,102,0.22);
-
-            border-radius: 50px;
-
-            background:
-                rgba(37,211,102,0.06);
-
-            color: var(--green);
-
-            font-size: 10px;
-
-            font-weight: 800;
-
-            letter-spacing: 0.8px;
-
-            text-transform: uppercase;
-        }
-
-
-        .status-dot {
-
-            display: inline-block;
-
-            width: 6px;
-            height: 6px;
-
-            margin-right: 5px;
-
-            border-radius: 50%;
-
-            background: var(--green);
-
-            box-shadow:
-                0 0 10px var(--green);
-        }
-
-
-        /* =========================
-           HERO
-        ========================== */
-
-        .hero {
-
-            text-align: center;
-
-            padding-top: 28px;
-        }
-
-
-        .hero h1 {
-
-            font-size: 31px;
-
-            line-height: 1.05;
-
-            letter-spacing: -1.3px;
-
-            font-weight: 950;
-        }
-
-
-        .hero h1 span {
-            color: var(--yellow);
-        }
-
-
-        .hero-subtitle {
-
-            max-width: 390px;
-
-            margin: 14px auto 0;
-
-            color: var(--gray);
-
-            font-size: 15px;
-
-            line-height: 1.5;
-        }
-
-
-        .hero-subtitle strong {
-            color: #eeeeee;
-        }
-
-
-        .plan-price {
-            margin-top: 16px;
-            color: var(--green);
-            font-size: 27px;
-            font-weight: 950;
-        }
-
-
-        .plan-price span {
-            color: var(--gray);
-            font-size: 14px;
-            font-weight: 650;
-        }
-
-
-        .marketplaces {
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            gap: 8px;
-
-            margin-top: 16px;
-        }
-
-
-        .marketplace {
-
-            padding: 6px 10px;
-
-            border-radius: 7px;
-
-            background: #171717;
-
-            border:
-                1px solid
-                var(--border);
-
-            font-size: 11px;
-
-            font-weight: 800;
-        }
-
-
-        .marketplace.ml {
-            color: #ffe600;
-        }
-
-
-        .marketplace.sh {
-            color: #ff7043;
-        }
-
-
-        /* =========================
-           DIVISOR
-        ========================== */
-
-        .divider {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 10px;
-
-            margin: 30px 0 15px;
-
-            color: var(--gray-dark);
-
-            font-size: 10px;
-
-            font-weight: 800;
-
-            letter-spacing: 1px;
-
-            text-transform: uppercase;
-        }
-
-
-        .divider::before,
-        .divider::after {
-
-            content: "";
-
-            flex: 1;
-
-            height: 1px;
-
-            background: var(--border);
-        }
-
-
-        /* =========================
-           PRODUCTS
-        ========================== */
-
-        .products {
-
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 12px;
-        }
-
-
-        .product-card {
-
-            position: relative;
-
-            display: flex;
-
-            gap: 13px;
-
-            padding: 12px;
-
-            border-radius: 17px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    var(--card-2),
-                    var(--card)
-                );
-
-            border:
-                1px solid
-                var(--border);
-
-            overflow: hidden;
-
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-
-        .product-card:hover {
-
-            transform: translateY(-2px);
-
-            border-color:
-                rgba(37,211,102,0.22);
-        }
-
-
-        /* brilho lateral */
-
-        .product-card::before {
-
-            content: "";
-
-            position: absolute;
-
-            left: 0;
-            top: 0;
-
-            width: 3px;
-            height: 100%;
-
-            background: var(--green);
-
-            opacity: 0.7;
-        }
-
-
-        /* =========================
-           PRODUCT IMAGE
-        ========================== */
-
-        .product-image {
-
-            flex: 0 0 92px;
-
-            width: 92px;
-            height: 92px;
-
-            border-radius: 12px;
-
-            background: transparent;
-
-            overflow: hidden;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-        }
-
-
-        .product-image img {
-
-            width: 100%;
-            height: 100%;
-
-            object-fit: contain;
-
-            display: block;
-        }
-
-
-        /* =========================
-           PRODUCT INFO
-        ========================== */
-
-        .product-info {
-
-            min-width: 0;
-
-            flex: 1;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: center;
-        }
-
-
-        .product-tag {
-
-            width: fit-content;
-
-            padding: 4px 7px;
-
-            border-radius: 5px;
-
-            background:
-                rgba(255,216,61,0.13);
-
-            color: var(--yellow);
-
-            font-size: 8px;
-
-            font-weight: 900;
-
-            letter-spacing: 0.6px;
-
-            text-transform: uppercase;
-        }
-
-
-        .product-name {
-
-            margin-top: 6px;
-
-            color: #eeeeee;
-
-            font-size: 13px;
-
-            line-height: 1.25;
-
-            font-weight: 750;
-        }
-
-
-        .price-area {
-
-            margin-top: 6px;
-
-            display: flex;
-
-            align-items: baseline;
-
-            gap: 7px;
-
-            flex-wrap: wrap;
-        }
-
-
-        .old-price {
-
-            color: #777777;
-
-            font-size: 10px;
-
-            text-decoration: line-through;
-        }
-
-
-        .new-price {
-
-            color: var(--green);
-
-            font-size: 21px;
-
-            line-height: 1;
-
-            font-weight: 950;
-
-            letter-spacing: -0.5px;
-        }
-
-
-        .saving {
-
-            margin-top: 4px;
-
-            color: #8d8d8d;
-
-            font-size: 9px;
-
-            font-weight: 650;
-        }
-
-
-        /* =========================
-           MAIN CTA
-        ========================== */
-
-        .cta-wrapper {
-
-            margin-top: 23px;
-        }
-
-
-        .main-cta {
-
-            position: relative;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            width: 100%;
-
-            min-height: 58px;
-
-            padding: 14px 18px;
-
-            border-radius: 14px;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    #2be875,
-                    #20c965
-                );
-
-            color: #061008;
-
-            text-decoration: none;
-
-            font-size: 17px;
-
-            font-weight: 950;
-
-            letter-spacing: -0.3px;
-
-            box-shadow:
-                0 8px 30px
-                rgba(37,211,102,0.20);
-
-            transition:
-                transform 0.18s ease,
-                box-shadow 0.18s ease;
-        }
-
-
-        .main-cta:hover {
-
-            transform: translateY(-2px);
-
-            box-shadow:
-                0 12px 35px
-                rgba(37,211,102,0.28);
-        }
-
-
-        .main-cta:active {
-
-            transform: scale(0.98);
-        }
-
-
-        .cta-subtitle {
-
-            margin-top: 8px;
-
-            text-align: center;
-
-            color: var(--gray-dark);
-
-            font-size: 10px;
-        }
-
-
-        /* =========================
-           BENEFITS
-        ========================== */
-
-        .benefits {
-
-            display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-            gap: 8px;
-
-            margin-top: 18px;
-        }
-
-
-        .benefit {
-
-            padding: 11px 10px;
-
-            border-radius: 10px;
-
-            background: #101010;
-
-            border:
-                1px solid
-                var(--border);
-
-            color: #a8a8a8;
-
-            font-size: 10px;
-
-            line-height: 1.35;
-        }
-
-
-        .benefit strong {
-
-            display: block;
-
-            margin-bottom: 2px;
-
-            color: #e8e8e8;
-
-            font-size: 10px;
-        }
-
-
-        /* =========================
-           HOW IT WORKS
-        ========================== */
-
-        .how {
-
-            margin-top: 28px;
-
-            padding: 17px;
-
-            border-radius: 15px;
-
-            background: #101010;
-
-            border:
-                1px solid
-                var(--border);
-        }
-
-
-        .how-title {
-
-            margin-bottom: 13px;
-
-            font-size: 13px;
-
-            font-weight: 900;
-
-            color: #eeeeee;
-        }
-
-
-        .step {
-
-            display: flex;
-
-            align-items: flex-start;
-
-            gap: 10px;
-
-            margin-top: 11px;
-        }
-
-
-        .step-number {
-
-            flex: 0 0 23px;
-
-            width: 23px;
-            height: 23px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background:
-                rgba(37,211,102,0.12);
-
-            color: var(--green);
-
-            font-size: 10px;
-
-            font-weight: 900;
-        }
-
-
-        .step-text {
-
-            color: #929292;
-
-            font-size: 11px;
-
-            line-height: 1.4;
-        }
-
-
-        .step-text strong {
-            color: #dddddd;
-        }
-
-
-        /* =========================
-           NOTICE
-        ========================== */
-
-        .notice {
-
-            margin-top: 18px;
-
-            padding: 12px 13px;
-
-            border-radius: 10px;
-
-            background:
-                rgba(255,216,61,0.05);
-
-            border:
-                1px solid
-                rgba(255,216,61,0.10);
-
-            color: #8d8d8d;
-
-            font-size: 9px;
-
-            line-height: 1.5;
-
-            text-align: center;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-
-            margin-top: 22px;
-
-            text-align: center;
-
-            color: #555555;
-
-            font-size: 9px;
-
-            line-height: 1.5;
-        }
-
-
-        /* =========================
-           STICKY CTA
-        ========================== */
-
-        .sticky-cta {
-
-            position: fixed;
-
-            z-index: 100;
-
-            left: 50%;
-
-            bottom: 10px;
-
-            transform: translateX(-50%);
-
-            width: calc(100% - 28px);
-
-            max-width: 452px;
-
-            padding: 7px;
-
-            border-radius: 15px;
-
-            background:
-                rgba(15,15,15,0.92);
-
-            border:
-                1px solid
-                rgba(255,255,255,0.08);
-
-            backdrop-filter: blur(12px);
-
-            -webkit-backdrop-filter: blur(12px);
-
-            box-shadow:
-                0 10px 40px
-                rgba(0,0,0,0.5);
-        }
-
-
-        .sticky-cta a,
-        .sticky-cta .pending-cta {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            min-height: 48px;
-
-            border-radius: 10px;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    #2be875,
-                    #20c965
-                );
-
-            color: #061008;
-
-            text-decoration: none;
-
-            font-size: 13px;
-
-            font-weight: 950;
-
-            transition:
-                transform 0.15s ease;
-        }
-
-
-        .pending-cta {
-            cursor: default;
-            opacity: 0.72;
-            text-align: center;
-        }
-
-
-        .sticky-cta a:active {
-
-            transform: scale(0.98);
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================== */
-
-        @media (max-width: 360px) {
-
-            .page {
-
-                padding-left: 14px;
-
-                padding-right: 14px;
-            }
-
-
-            .hero h1 {
-
-                font-size: 27px;
-            }
-
-
-            .product-image {
-
-                flex-basis: 80px;
-
-                width: 80px;
-
-                height: 80px;
-            }
-
-
-            .new-price {
-
-                font-size: 19px;
-            }
-
-
-            .main-cta {
-
-                font-size: 15px;
-            }
-        }
-
-
-        /* =========================
-           REDUZIR ANIMAÇÕES
-        ========================== */
-
-        @media (prefers-reduced-motion: reduce) {
-
-            html {
-
-                scroll-behavior: auto;
-            }
-
-
-            *,
-            *::before,
-            *::after {
-
-                transition: none !important;
-            }
-        }
-
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f1e9">
+  <title>Flash Ofertas 23 — ofertas selecionadas no seu WhatsApp</title>
+  <meta name="description" content="Receba uma seleção de ofertas do Mercado Livre e da Shopee no WhatsApp. Assinatura mensal do Flash Ofertas 23 por R$ 4,90.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flash Ofertas 23 — seu radar de ofertas">
+  <meta property="og:description" content="Ofertas selecionadas no seu WhatsApp por R$ 4,90 por mês.">
+  <meta property="og:url" content="https://flashofertas.deyvidmagalhaes.com.br/">
+  <link rel="canonical" href="https://flashofertas.deyvidmagalhaes.com.br/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1736558787065660');
+    fbq('track','PageView');
+  </script>
+  <style>
+    :root {
+      --paper: #f3f1e9;
+      --paper-light: #fffdf6;
+      --ink: #12281b;
+      --ink-soft: #506056;
+      --line: #d8dfd4;
+      --green: #1fc46a;
+      --green-dark: #0e4229;
+      --yellow: #f6cb4f;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'DM Sans', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+    .container { width: min(1140px, calc(100% - 48px)); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid var(--line); background: var(--paper-light); }
+    .header-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { text-decoration: none; font: 900 29px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.04em; text-transform: uppercase; }
+    .brand span { color: #138c4a; }
+    .header-nav { display: flex; align-items: center; gap: 26px; font-size: 13px; font-weight: 800; }
+    .header-nav a { text-decoration: none; }
+    .header-nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
+    .header-price { padding: 9px 13px; border: 1px solid var(--ink); border-radius: 999px; white-space: nowrap; }
+    .hero { overflow: hidden; padding: 46px 0 64px; background: radial-gradient(circle at 90% 10%, #dff4df 0, transparent 38%), var(--paper); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); align-items: center; gap: clamp(34px, 6vw, 92px); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 20px; color: var(--green-dark); font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px #d9f2df; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: 'Barlow Condensed', Impact, sans-serif; text-transform: uppercase; }
+    h1 { max-width: 670px; margin-bottom: 17px; font-size: clamp(58px, 6.6vw, 84px); line-height: .9; letter-spacing: -.035em; }
+    h1 em { display: block; color: #138c4a; font-style: normal; }
+    .hero-lead { max-width: 560px; margin-bottom: 20px; color: #34483b; font-size: clamp(17px, 1.7vw, 19px); line-height: 1.45; }
+    .hero-lead strong { color: var(--ink); }
+    .hero-price { display: flex; align-items: baseline; gap: 10px; margin-bottom: 20px; }
+    .hero-price strong { font: 900 46px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.03em; }
+    .hero-price span { color: var(--ink-soft); font-size: 15px; font-weight: 700; }
+    .cta { display: inline-flex; min-height: 59px; align-items: center; justify-content: center; gap: 11px; padding: 15px 24px; border: 0; border-radius: 9px; background: var(--ink); color: var(--white); font-size: 15px; font-weight: 800; text-align: center; text-decoration: none; box-shadow: 6px 6px 0 var(--yellow); }
+    .cta:hover { background: var(--green-dark); }
+    .cta-pending { cursor: default; background: #365040; box-shadow: 6px 6px 0 #d4d2c5; }
+    .cta-pending:hover { background: #365040; }
+    .hero-note { margin: 16px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.5; }
+    .hero-note a { font-weight: 800; text-underline-offset: 3px; }
+    .receipt-wrap { position: relative; padding: 18px 14px 0 0; }
+    .receipt-wrap::before { content: ''; position: absolute; inset: 2% -8% -4% 9%; background: var(--yellow); transform: rotate(5deg); border-radius: 4px; }
+    .receipt { position: relative; transform: rotate(-2deg); padding: 26px 26px 32px; background: var(--paper-light); border: 1px solid var(--ink); box-shadow: 12px 14px 0 var(--green-dark); }
+    .receipt::after { content: ''; position: absolute; bottom: -10px; left: 0; right: 0; height: 10px; background: linear-gradient(135deg, var(--paper-light) 5px, transparent 0) 0 0/10px 10px repeat-x, linear-gradient(225deg, var(--paper-light) 5px, transparent 0) 0 0/10px 10px repeat-x; }
+    .receipt-top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; padding-bottom: 18px; border-bottom: 2px dashed #aab8a8; }
+    .receipt-logo { font: 900 32px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.035em; }
+    .receipt-logo span { display: block; color: #138c4a; }
+    .receipt-stamp { padding: 7px 9px; background: var(--yellow); font: 800 10px/1.2 'DM Sans', sans-serif; text-transform: uppercase; transform: rotate(5deg); }
+    .receipt-caption { margin: 17px 0 10px; color: var(--ink-soft); font-size: 11px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .receipt-product { display: flex; gap: 17px; align-items: center; }
+    .receipt-product img { width: 94px; height: 94px; border-radius: 8px; object-fit: contain; background: #f1f1ec; }
+    .receipt-product h2 { margin: 0 0 5px; font-size: 25px; line-height: 1; }
+    .receipt-product p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.4; }
+    .receipt-rule { border-top: 2px dashed #aab8a8; margin: 19px 0; }
+    .receipt-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; font-size: 13px; font-weight: 700; }
+    .receipt-list li { display: flex; align-items: center; gap: 9px; }
+    .receipt-list li::before { content: '✓'; color: #138c4a; font-weight: 900; }
+    .receipt-foot { margin: 20px 0 0; padding-top: 14px; border-top: 1px solid var(--line); color: #5b6e60; font-size: 11px; line-height: 1.5; }
+    .ticker { background: var(--ink); color: var(--paper-light); overflow: hidden; }
+    .ticker-inner { display: flex; justify-content: center; gap: clamp(20px, 5vw, 70px); padding: 17px 20px; font: 800 18px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .07em; text-transform: uppercase; white-space: nowrap; }
+    .ticker b { color: var(--yellow); }
+    section { scroll-margin-top: 20px; }
+    .section { padding: 86px 0; }
+    .section-kicker { margin: 0 0 9px; color: #177744; font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    .section-title { max-width: 740px; margin-bottom: 18px; font-size: clamp(42px, 5.2vw, 66px); line-height: .95; letter-spacing: -.02em; }
+    .section-lead { max-width: 640px; margin-bottom: 0; color: var(--ink-soft); font-size: 17px; line-height: 1.6; }
+    .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 38px; }
+    .value-card { min-height: 225px; padding: 26px; border: 1px solid var(--line); background: var(--paper-light); }
+    .value-card .mark { display: inline-grid; place-items: center; width: 43px; height: 43px; margin-bottom: 24px; border-radius: 50%; background: #d9f2df; font-size: 22px; }
+    .value-card h3 { margin-bottom: 9px; font-size: 29px; line-height: 1; }
+    .value-card p { margin-bottom: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+    .examples { background: #e5eadd; }
+    .example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; margin-top: 34px; }
+    .example-card { overflow: hidden; border: 1px solid #cfd9cc; background: var(--paper-light); }
+    .example-card img { display: block; width: 100%; height: 180px; object-fit: contain; padding: 16px; background: #eef0e9; }
+    .example-card div { padding: 17px 19px 20px; }
+    .example-card small { color: #177744; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .example-card h3 { margin: 7px 0 0; font-size: 26px; line-height: 1; }
+    .example-note { margin: 16px 0 0; color: var(--ink-soft); font-size: 12px; }
+    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; }
+    .step { padding-top: 18px; border-top: 2px solid var(--ink); }
+    .step-num { display: block; margin-bottom: 20px; font: 900 44px/1 'Barlow Condensed', Impact, sans-serif; color: #138c4a; }
+    .step h3 { margin-bottom: 8px; font-size: 30px; line-height: 1; }
+    .step p { margin-bottom: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+    .pricing { padding: 80px 0; background: var(--green-dark); color: var(--white); }
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .pricing .section-kicker { color: var(--yellow); }
+    .pricing h2 { max-width: 580px; margin: 0 0 15px; font-size: clamp(48px, 6vw, 76px); line-height: .91; }
+    .pricing p { max-width: 520px; margin-bottom: 0; color: #d4e8d9; font-size: 16px; line-height: 1.6; }
+    .pricing-card { padding: 31px; background: var(--paper-light); color: var(--ink); border: 2px solid var(--yellow); box-shadow: 12px 12px 0 #082b1a; }
+    .pricing-card > p:first-child { margin-bottom: 6px; color: #177744; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .pricing-card .amount { display: flex; align-items: baseline; gap: 8px; margin-bottom: 15px; font: 900 70px/1 'Barlow Condensed', Impact, sans-serif; }
+    .pricing-card .amount span { font: 700 16px/1 'DM Sans', Arial, sans-serif; color: var(--ink-soft); }
+    .pricing-card ul { display: grid; gap: 11px; margin: 0 0 27px; padding-left: 20px; font-size: 14px; font-weight: 700; }
+    .pricing-card .cta { width: 100%; box-shadow: 5px 5px 0 var(--yellow); }
+    .pricing-card .fine { margin: 17px 0 0; color: var(--ink-soft); font-size: 11px; line-height: 1.5; text-align: center; }
+    .faq { padding: 80px 0 110px; }
+    .faq-grid { display: grid; grid-template-columns: 320px 1fr; gap: 60px; }
+    .faq h2 { margin-bottom: 0; font-size: 56px; line-height: .94; }
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; cursor: pointer; font-size: 16px; font-weight: 800; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: #138c4a; font-size: 24px; line-height: .8; }
+    details[open] summary::after { content: '−'; }
+    details p { max-width: 620px; margin: -5px 0 21px; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
+    .site-footer { border-top: 1px solid var(--line); padding: 26px 0 34px; color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 28px; }
+    .footer-inner p { max-width: 610px; margin: 0; }
+    .footer-inner strong { color: var(--ink); }
+    .mobile-bar { display: none; }
+    @media (max-width: 900px) {
+      .header-nav { gap: 15px; }
+      .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); gap: 25px; }
+      h1 { font-size: clamp(52px, 7vw, 80px); }
+      .pricing-grid { gap: 30px; }
+    }
+    @media (max-width: 720px) {
+      .container { width: min(100% - 32px, 520px); }
+      .header-inner { min-height: 63px; }
+      .brand { font-size: 26px; }
+      .header-nav a:not(.header-price) { display: none; }
+      .header-price { padding: 7px 10px; font-size: 11px; }
+      .hero { padding: 45px 0 67px; }
+      .hero-grid, .pricing-grid, .faq-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 45px; }
+      h1 { font-size: clamp(57px, 12.7vw, 78px); }
+      .hero-lead { font-size: 17px; }
+      .receipt-wrap { width: min(100% - 22px, 410px); margin-inline: auto; }
+      .receipt { padding: 23px 20px 28px; }
+      .ticker-inner { justify-content: flex-start; font-size: 16px; }
+      .ticker-inner span:last-child { display: none; }
+      .section { padding: 66px 0; }
+      .value-grid, .example-grid, .steps-grid { grid-template-columns: 1fr; gap: 12px; }
+      .value-card { min-height: 0; padding: 22px; }
+      .value-card .mark { margin-bottom: 15px; }
+      .example-grid { grid-template-columns: repeat(3, minmax(200px, 1fr)); overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory; }
+      .example-card { scroll-snap-align: start; }
+      .example-card img { height: 150px; }
+      .steps-grid { gap: 26px; }
+      .pricing { padding: 67px 0; }
+      .pricing-card { padding: 25px; }
+      .faq { padding: 67px 0 115px; }
+      .faq-grid { gap: 25px; }
+      .faq h2 { font-size: 48px; }
+      .footer-inner { flex-direction: column; gap: 6px; }
+      .site-footer { padding-bottom: 100px; }
+      .mobile-bar { position: fixed; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 12px; bottom: 0; left: 0; right: 0; padding: 10px 16px max(10px, env(safe-area-inset-bottom)); background: #f3f1e9ef; border-top: 1px solid var(--line); backdrop-filter: blur(12px); }
+      .mobile-bar strong { font: 900 28px/1 'Barlow Condensed', Impact, sans-serif; white-space: nowrap; }
+      .mobile-bar .cta { min-height: 45px; padding: 9px 13px; font-size: 11px; box-shadow: 3px 3px 0 #d4d2c5; }
+    }
+    @media (max-width: 390px) {
+      .brand { font-size: 22px; }
+      h1 { font-size: 55px; }
+      .hero-price strong { font-size: 46px; }
+      .mobile-bar { padding-inline: 10px; }
+      .mobile-bar strong { font-size: 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
-
-
 <body>
-
-
-    <!-- =========================
-         PAGE
-    ========================== -->
-
-    <main class="page">
-
-
-        <!-- LOGO -->
-
-        <div class="logo">
-            FLASH OFERTAS <span>23⚡</span>
-        </div>
-
-
-        <!-- STATUS -->
-
-        <div class="status">
-
-            <span class="status-dot"></span>
-
-            Curadoria de ofertas
-
-        </div>
-
-
-        <!-- HERO -->
-
-        <section class="hero">
-
-            <h1>
-
-                🔥 OFERTAS QUE
-                <span>VALEM A PENA</span>
-
-            </h1>
-
-
-            <p class="hero-subtitle">
-
-                Cupons, descontos e oportunidades
-                encontradas no
-                <strong>Mercado Livre</strong> e
-                <strong>Shopee</strong>.
-
-            </p>
-
-
-            <div class="plan-price">
-                R$ 4,90 <span>/ mês</span>
-            </div>
-
-
-            <div class="marketplaces">
-
-                <div class="marketplace ml">
-
-                    🛒 Mercado Livre
-
-                </div>
-
-
-                <div class="marketplace sh">
-
-                    🛍️ Shopee
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- DIVISOR -->
-
-        <div class="divider">
-
-            Exemplos de oportunidades
-
-        </div>
-
-
-        <!-- =========================
-             PRODUCTS
-        ========================== -->
-
-        <section class="products">
-
-
-            <!-- IPHONE -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="iphone.jpg"
-                        alt="iPhone 13 128GB"
-                        loading="eager"
-                    >
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <span class="product-tag">
-
-                        Exemplo de oferta
-
-                    </span>
-
-
-                    <div class="product-name">
-
-                        iPhone 13 Apple
-                        128GB Meia-noite
-
-                    </div>
-
-
-                    <div class="price-area">
-
-                        <span class="old-price">
-
-                            R$ 4.299
-
-                        </span>
-
-
-                        <span class="new-price">
-
-                            R$ 2.440
-
-                        </span>
-
-                    </div>
-
-
-                    <div class="saving">
-
-                        Economia de R$ 1.859
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- BOSCH -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="bosch.jpg"
-                        alt="Kit de ferramentas Bosch"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <span class="product-tag">
-
-                        Exemplo de cupom
-
-                    </span>
-
-
-                    <div class="product-name">
-
-                        Maleta de Ferramentas
-                        Bosch 142 peças
-
-                    </div>
-
-
-                    <div class="price-area">
-
-                        <span class="old-price">
-
-                            R$ 549
-
-                        </span>
-
-
-                        <span class="new-price">
-
-                            R$ 137
-
-                        </span>
-
-                    </div>
-
-
-                    <div class="saving">
-
-                        Economia de R$ 412
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- COOKTOP -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="cooktop.jpg"
-                        alt="Cooktop 5 bocas"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <span class="product-tag">
-
-                        Exemplo de oferta
-
-                    </span>
-
-
-                    <div class="product-name">
-
-                        Cooktop 5 Bocas
-                        Vidro Temperado
-
-                    </div>
-
-
-                    <div class="price-area">
-
-                        <span class="old-price">
-
-                            R$ 689
-
-                        </span>
-
-
-                        <span class="new-price">
-
-                            R$ 247
-
-                        </span>
-
-                    </div>
-
-
-                    <div class="saving">
-
-                        Economia de R$ 442
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-        </section>
-
-
-        <!-- =========================
-             CTA PRINCIPAL
-        ========================== -->
-
-        <section class="cta-wrapper">
-
-
-            <span class="main-cta pending-cta">
-                ⚡ ASSINATURAS EM BREVE
-            </span>
-
-
-            <div class="cta-subtitle">
-
-                Acesso ao grupo após confirmação do pagamento • R$ 4,90/mês
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             BENEFITS
-        ========================== -->
-
-        <section class="benefits">
-
-
-            <div class="benefit">
-
-                <strong>
-                    💰 Cupons e descontos
-                </strong>
-
-                Oportunidades selecionadas
-                ao longo do dia.
-
-            </div>
-
-
-            <div class="benefit">
-
-                <strong>
-                    📲 Direto no WhatsApp
-                </strong>
-
-                Receba os alertas sem precisar
-                ficar procurando.
-
-            </div>
-
-
-            <div class="benefit">
-
-                <strong>
-                    🛒 Mercado Livre
-                </strong>
-
-                Ofertas e oportunidades
-                encontradas na plataforma.
-
-            </div>
-
-
-            <div class="benefit">
-
-                <strong>
-                    🛍️ Shopee
-                </strong>
-
-                Produtos, cupons e
-                promoções selecionadas.
-
-            </div>
-
-
-        </section>
-
-
-        <!-- =========================
-             HOW IT WORKS
-        ========================== -->
-
-        <section class="how">
-
-
-            <div class="how-title">
-
-                ⚡ Como funciona?
-
-            </div>
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    1
-                </div>
-
-
-                <div class="step-text">
-
-                    <strong>
-                        Assine o grupo
-                    </strong>
-
-                    <br>
-
-                    Faça sua assinatura mensal.
-                    O acesso é liberado após
-                    a confirmação do pagamento.
-
-                </div>
-
-            </div>
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    2
-                </div>
-
-
-                <div class="step-text">
-
-                    <strong>
-                        Receba as oportunidades
-                    </strong>
-
-                    <br>
-
-                    Os alertas chegam
-                    diretamente no seu celular.
-
-                </div>
-
-            </div>
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    3
-                </div>
-
-
-                <div class="step-text">
-
-                    <strong>
-                        Escolha o que interessa
-                    </strong>
-
-                    <br>
-
-                    Você decide se quer
-                    aproveitar cada oferta.
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-        <!-- =========================
-             NOTICE
-        ========================== -->
-
-        <div class="notice">
-
-            ⚠️ As ofertas acima são exemplos e podem
-            não estar disponíveis hoje. Preços, cupons,
-            estoque e condições
-            das ofertas podem mudar ou acabar
-            a qualquer momento.
-
-            Sempre confira as condições no site
-            da loja antes de finalizar a compra.
-
-        </div>
-
-
-        <!-- =========================
-             FOOTER
-        ========================== -->
-
-        <footer>
-
-            FLASH OFERTAS 23 ⚡
-
-            <br>
-
-            Ofertas e oportunidades selecionadas.
-
-        </footer>
-
-
-    </main>
-
-
-    <!-- =========================
-         STICKY CTA
-    ========================== -->
-
-    <div class="sticky-cta">
-
-
-        <span class="pending-cta">
-            ⚡ ASSINATURAS EM BREVE · R$ 4,90/MÊS
-        </span>
-
-
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Flash Ofertas 23, início">FLASH OFERTAS <span>23⚡</span></a>
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a href="#o-que-recebe">O que recebe</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="header-price" href="#assinatura">R$ 4,90/mês</a>
+      </nav>
     </div>
+  </header>
 
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Seu radar de oportunidades</p>
+      <h1 id="hero-title">Oferta boa passa. <em>O grupo te avisa.</em></h1>
+          <p class="hero-lead">Ofertas selecionadas do <strong>Mercado Livre</strong> e da <strong>Shopee</strong>, direto no seu WhatsApp. Você abre o que interessa e decide se vale a compra.</p>
+          <div class="hero-price"><strong>R$ 4,90</strong><span>por mês</span></div>
+          <span class="cta cta-pending" aria-label="Assinaturas em breve">⚡ Assinaturas em breve</span>
+          <p class="hero-note">Veja <a href="#o-que-recebe">o que chega no grupo</a> antes de decidir.</p>
+        </div>
+        <div class="receipt-wrap" aria-label="Exemplo do formato das mensagens do grupo">
+          <div class="receipt">
+            <div class="receipt-top"><div class="receipt-logo">FLASH OFERTAS <span>23⚡</span></div><span class="receipt-stamp">Exemplo<br>de alerta</span></div>
+            <p class="receipt-caption">Quando um achado merece atenção</p>
+            <div class="receipt-product"><img src="iphone.jpg" alt="Exemplo de produto: iPhone" width="94" height="94"><div><h2>Um achado, sem enrolação.</h2><p>Produto de exemplo. A oferta real vem com detalhes para você conferir.</p></div></div>
+            <div class="receipt-rule"></div>
+            <ul class="receipt-list"><li>Loja e link para a oferta</li><li>Preço observado ao publicar</li><li>Cupom e condições, quando houver</li></ul>
+            <p class="receipt-foot">Este cartão mostra o formato do alerta. Não representa uma oferta ativa nem garante preço ou estoque.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <div class="ticker" aria-label="Mercado Livre e Shopee no WhatsApp"><div class="ticker-inner"><span>Menos busca. <b>Mais achados.</b></span><span>Mercado Livre + Shopee</span><span>Direto no WhatsApp</span></div></div>
+
+    <section class="section" id="o-que-recebe" aria-labelledby="value-title">
+      <div class="container">
+        <p class="section-kicker">A proposta é simples</p>
+        <h2 class="section-title" id="value-title">Pare de abrir dez abas para encontrar uma boa compra.</h2>
+        <p class="section-lead">O Flash Ofertas 23 reúne oportunidades em um só grupo. Você recebe o alerta, confere as condições na loja e escolhe se quer aproveitar.</p>
+        <div class="value-grid">
+          <article class="value-card"><span class="mark" aria-hidden="true">⌕</span><h3>Seleção de ofertas</h3><p>Produtos e cupons encontrados no Mercado Livre e na Shopee, com o contexto necessário para você avaliar.</p></article>
+          <article class="value-card"><span class="mark" aria-hidden="true">↗</span><h3>Link direto para conferir</h3><p>O alerta leva à página da loja. Verifique preço final, frete, estoque e regras do cupom antes de comprar.</p></article>
+          <article class="value-card"><span class="mark" aria-hidden="true">▣</span><h3>No seu WhatsApp</h3><p>Os achados chegam onde você já conversa. Abra apenas os que fizerem sentido para você.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section examples" aria-labelledby="examples-title">
+      <div class="container">
+        <p class="section-kicker">De tecnologia à casa</p>
+        <h2 class="section-title" id="examples-title">O tipo de produto que pode aparecer.</h2>
+        <p class="section-lead">A seleção pode variar conforme as oportunidades encontradas. Estes produtos ilustram categorias, sem representar ofertas disponíveis agora.</p>
+        <div class="example-grid">
+          <article class="example-card"><img src="iphone.jpg" alt="iPhone, exemplo da categoria tecnologia" loading="lazy" width="224" height="224"><div><small>Tecnologia</small><h3>Celulares e eletrônicos</h3></div></article>
+          <article class="example-card"><img src="bosch.jpg" alt="Maleta de ferramentas, exemplo da categoria ferramentas" loading="lazy" width="400" height="400"><div><small>Ferramentas</small><h3>Itens para resolver em casa</h3></div></article>
+          <article class="example-card"><img src="cooktop.jpg" alt="Cooktop, exemplo da categoria casa" loading="lazy" width="600" height="600"><div><small>Casa</small><h3>Produtos para o dia a dia</h3></div></article>
+        </div>
+        <p class="example-note">As imagens são exemplos de categorias. Preços e disponibilidade mudam nas lojas.</p>
+      </div>
+    </section>
+
+    <section class="section" id="como-funciona" aria-labelledby="steps-title">
+      <div class="container">
+        <p class="section-kicker">Três passos</p>
+        <h2 class="section-title" id="steps-title">Assine. Receba. Decida.</h2>
+        <div class="steps-grid">
+          <div class="step"><span class="step-num">01</span><h3>Faça sua assinatura</h3><p>O acesso mensal custa R$ 4,90. A entrada no grupo acontece após a confirmação do pagamento.</p></div>
+          <div class="step"><span class="step-num">02</span><h3>Veja os alertas</h3><p>As ofertas selecionadas chegam no grupo do WhatsApp com informações para você conferir na loja.</p></div>
+          <div class="step"><span class="step-num">03</span><h3>Compre se valer a pena</h3><p>Você escolhe o que abrir. A compra, quando houver, é feita diretamente no site da loja.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="assinatura" aria-labelledby="pricing-title">
+      <div class="container pricing-grid">
+        <div><p class="section-kicker">Seu acesso ao grupo</p><h2 id="pricing-title">Uma seleção de oportunidades por um preço simples.</h2><p>Você decide se cada oferta vale seu dinheiro. A mensalidade dá acesso ao grupo e aos alertas publicados durante a assinatura.</p></div>
+        <div class="pricing-card"><p>Flash Ofertas 23</p><div class="amount">R$ 4,90 <span>/ mês</span></div><ul><li>Acesso ao grupo no WhatsApp</li><li>Ofertas de Mercado Livre e Shopee</li><li>Alertas com link e condições para conferir</li></ul><span class="cta cta-pending" aria-label="Assinaturas em breve">⚡ Assinaturas em breve</span><p class="fine">Cobrança mensal. A entrada será liberada após a confirmação do pagamento. As ofertas dependem de disponibilidade nas lojas.</p></div>
+      </div>
+    </section>
+
+    <section class="faq" id="duvidas" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div><p class="section-kicker">Antes de entrar</p><h2 id="faq-title">Dúvidas rápidas.</h2></div>
+        <div class="faq-list">
+          <details><summary>O grupo vende os produtos?</summary><p>Não. O grupo compartilha oportunidades encontradas em lojas como Mercado Livre e Shopee. Você confere as condições e, se quiser, compra diretamente na loja.</p></details>
+          <details><summary>Os preços e cupons são garantidos?</summary><p>Não. Preço, frete, cupom e estoque podem mudar a qualquer momento. Sempre confira as condições finais na página do produto antes de pagar.</p></details>
+          <details><summary>É mensal? Posso cancelar?</summary><p>Sim. A cobrança é mensal e você pode cancelar a assinatura pela plataforma de pagamento. O acesso ao grupo termina ao fim do período pago.</p></details>
+          <details><summary>Quando recebo acesso?</summary><p>Depois que o pagamento da assinatura for confirmado. As instruções de entrada serão apresentadas ao concluir a compra.</p></details>
+          <details><summary>Outras pessoas verão meu número?</summary><p>Sim. Em grupos de WhatsApp, o número de telefone dos participantes pode ser visto pelos demais membros.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p><strong>FLASH OFERTAS 23 ⚡</strong><br>Curadoria independente de ofertas. Mercado Livre e Shopee são citados como lojas onde produtos podem ser encontrados.</p><p>Confira sempre preço final, frete, cupom e disponibilidade antes de comprar.</p></div></footer>
+  <div class="mobile-bar"><strong>R$ 4,90/mês</strong><span class="cta cta-pending" aria-label="Assinaturas em breve">Em breve</span></div>
 </body>
-
 </html>
