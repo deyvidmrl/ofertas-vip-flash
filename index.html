@@ -13,12 +13,12 @@
     <title>FLASH OFERTAS 23 ⚡ | Mercado Livre + Shopee</title>
 
     <meta name="description"
-        content="Ofertas, cupons e oportunidades do Mercado Livre e Shopee selecionadas ao longo do dia. Entre gratuitamente no WhatsApp.">
+        content="Assine o grupo Flash Ofertas 23 por R$ 4,90 por mês e receba uma seleção de ofertas e cupons do Mercado Livre e Shopee no WhatsApp.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="FLASH OFERTAS 23 ⚡">
     <meta property="og:description"
-        content="Ofertas e cupons do Mercado Livre e Shopee direto no WhatsApp.">
+        content="Grupo de ofertas no WhatsApp por R$ 4,90 por mês. Ofertas e cupons selecionados do Mercado Livre e Shopee.">
     <meta property="og:type" content="website">
 
 
@@ -304,6 +304,21 @@
 
         .hero-subtitle strong {
             color: #eeeeee;
+        }
+
+
+        .plan-price {
+            margin-top: 16px;
+            color: var(--green);
+            font-size: 27px;
+            font-weight: 950;
+        }
+
+
+        .plan-price span {
+            color: var(--gray);
+            font-size: 14px;
+            font-weight: 650;
         }
 
 
@@ -907,7 +922,8 @@
         }
 
 
-        .sticky-cta a {
+        .sticky-cta a,
+        .sticky-cta .pending-cta {
 
             display: flex;
 
@@ -936,6 +952,13 @@
 
             transition:
                 transform 0.15s ease;
+        }
+
+
+        .pending-cta {
+            cursor: default;
+            opacity: 0.72;
+            text-align: center;
         }
 
 
@@ -1036,7 +1059,7 @@
 
             <span class="status-dot"></span>
 
-            Monitoramento ativo
+            Curadoria de ofertas
 
         </div>
 
@@ -1061,6 +1084,11 @@
                 <strong>Shopee</strong>.
 
             </p>
+
+
+            <div class="plan-price">
+                R$ 4,90 <span>/ mês</span>
+            </div>
 
 
             <div class="marketplaces">
@@ -1118,7 +1146,7 @@
 
                     <span class="product-tag">
 
-                        Oferta encontrada
+                        Exemplo de oferta
 
                     </span>
 
@@ -1179,7 +1207,7 @@
 
                     <span class="product-tag">
 
-                        Cupom disponível
+                        Exemplo de cupom
 
                     </span>
 
@@ -1240,7 +1268,7 @@
 
                     <span class="product-tag">
 
-                        Oferta relâmpago
+                        Exemplo de oferta
 
                     </span>
 
@@ -1292,22 +1320,14 @@
         <section class="cta-wrapper">
 
 
-            <a
-                href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="main-cta"
-                onclick="trackWhatsAppClick()"
-            >
-
-                ⚡ RECEBER OFERTAS NO WHATSAPP
-
-            </a>
+            <span class="main-cta pending-cta">
+                ⚡ ASSINATURAS EM BREVE
+            </span>
 
 
             <div class="cta-subtitle">
 
-                Entrada gratuita • Saia quando quiser
+                Acesso ao grupo após confirmação do pagamento • R$ 4,90/mês
 
             </div>
 
@@ -1396,13 +1416,14 @@
                 <div class="step-text">
 
                     <strong>
-                        Entre gratuitamente
+                        Assine o grupo
                     </strong>
 
                     <br>
 
-                    Clique no botão e entre
-                    no grupo do WhatsApp.
+                    Faça sua assinatura mensal.
+                    O acesso é liberado após
+                    a confirmação do pagamento.
 
                 </div>
 
@@ -1464,7 +1485,9 @@
 
         <div class="notice">
 
-            ⚠️ Preços, cupons, estoque e condições
+            ⚠️ As ofertas acima são exemplos e podem
+            não estar disponíveis hoje. Preços, cupons,
+            estoque e condições
             das ofertas podem mudar ou acabar
             a qualquer momento.
 
@@ -1499,72 +1522,12 @@
     <div class="sticky-cta">
 
 
-        <a
-            href="https://chat.whatsapp.com/KK2FuO62uAr9VBL0npjrCL"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="trackWhatsAppClick()"
-        >
-
-            ⚡ RECEBER OFERTAS E CUPONS
-
-        </a>
+        <span class="pending-cta">
+            ⚡ ASSINATURAS EM BREVE · R$ 4,90/MÊS
+        </span>
 
 
     </div>
-
-
-    <!-- =========================
-         TRACKING
-    ========================== -->
-
-    <script>
-
-        function trackWhatsAppClick() {
-
-            /*
-             * Registra o clique no Meta Pixel.
-             *
-             * O evento Contact representa
-             * a intenção de contato/clique.
-             *
-             * O clique não garante que a pessoa
-             * entrou efetivamente no grupo.
-             */
-
-            if (typeof fbq === "function") {
-
-                fbq(
-                    "track",
-                    "Contact"
-                );
-
-            }
-
-
-            /*
-             * DataLayer
-             * Para usar futuramente com
-             * Google Tag Manager / Analytics.
-             */
-
-            if (
-                typeof window.dataLayer !== "undefined"
-            ) {
-
-                window.dataLayer.push({
-
-                    event: "whatsapp_click",
-
-                    destination: "whatsapp_group"
-
-                });
-
-            }
-
-        }
-
-    </script>
 
 
 </body>
