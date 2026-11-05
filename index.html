@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f1e9">
-  <title>Flash Ofertas 23 — ofertas selecionadas no seu WhatsApp</title>
-  <meta name="description" content="Receba uma seleção de ofertas do Mercado Livre e da Shopee no WhatsApp. Assinatura mensal do Flash Ofertas 23 por R$ 4,90.">
+  <title>Flash Ofertas 23 — pare de caçar promoções</title>
+  <meta name="description" content="Pare de caçar promoções. Receba uma seleção de achados do Mercado Livre e da Shopee no WhatsApp por R$ 4,90 por mês.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Flash Ofertas 23 — seu radar de ofertas">
-  <meta property="og:description" content="Ofertas selecionadas no seu WhatsApp por R$ 4,90 por mês.">
+  <meta property="og:title" content="Flash Ofertas 23 — os achados chegam até você">
+  <meta property="og:description" content="Menos tempo procurando. Achados selecionados no WhatsApp por R$ 4,90 por mês.">
   <meta property="og:url" content="https://flashofertas.deyvidmagalhaes.com.br/">
   <link rel="canonical" href="https://flashofertas.deyvidmagalhaes.com.br/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,10 +74,8 @@
     .receipt-logo span { display: block; color: #138c4a; }
     .receipt-stamp { padding: 7px 9px; background: var(--yellow); font: 800 10px/1.2 'DM Sans', sans-serif; text-transform: uppercase; transform: rotate(5deg); }
     .receipt-caption { margin: 17px 0 10px; color: var(--ink-soft); font-size: 11px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
-    .receipt-product { display: flex; gap: 17px; align-items: center; }
-    .receipt-product img { width: 94px; height: 94px; border-radius: 8px; object-fit: contain; background: #f1f1ec; }
-    .receipt-product h2 { margin: 0 0 5px; font-size: 25px; line-height: 1; }
-    .receipt-product p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.4; }
+    .receipt-headline { margin: 3px 0 7px; font: 900 37px/.95 'Barlow Condensed', Impact, sans-serif; text-transform: uppercase; }
+    .receipt-copy { margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
     .receipt-rule { border-top: 2px dashed #aab8a8; margin: 19px 0; }
     .receipt-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; font-size: 13px; font-weight: 700; }
     .receipt-list li { display: flex; align-items: center; gap: 9px; }
@@ -98,12 +96,10 @@
     .value-card p { margin-bottom: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.6; }
     .examples { background: #e5eadd; }
     .example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; margin-top: 34px; }
-    .example-card { overflow: hidden; border: 1px solid #cfd9cc; background: var(--paper-light); }
-    .example-card img { display: block; width: 100%; height: 180px; object-fit: contain; padding: 16px; background: #eef0e9; }
-    .example-card div { padding: 17px 19px 20px; }
+    .example-card { padding: 24px; border: 1px solid #cfd9cc; background: var(--paper-light); }
     .example-card small { color: #177744; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .example-card h3 { margin: 7px 0 0; font-size: 26px; line-height: 1; }
-    .example-note { margin: 16px 0 0; color: var(--ink-soft); font-size: 12px; }
+    .example-card h3 { margin: 12px 0 8px; font-size: 29px; line-height: 1; }
+    .example-card p { margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.55; }
     .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; }
     .step { padding-top: 18px; border-top: 2px solid var(--ink); }
     .step-num { display: block; margin-bottom: 20px; font: 900 44px/1 'Barlow Condensed', Impact, sans-serif; color: #138c4a; }
@@ -161,9 +157,7 @@
       .value-grid, .example-grid, .steps-grid { grid-template-columns: 1fr; gap: 12px; }
       .value-card { min-height: 0; padding: 22px; }
       .value-card .mark { margin-bottom: 15px; }
-      .example-grid { grid-template-columns: repeat(3, minmax(200px, 1fr)); overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory; }
-      .example-card { scroll-snap-align: start; }
-      .example-card img { height: 150px; }
+      .example-grid { grid-template-columns: 1fr; }
       .steps-grid { gap: 26px; }
       .pricing { padding: 67px 0; }
       .pricing-card { padding: 25px; }
@@ -203,21 +197,22 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Seu radar de oportunidades</p>
-      <h1 id="hero-title">Oferta boa passa. <em>O grupo te avisa.</em></h1>
-          <p class="hero-lead">Ofertas selecionadas do <strong>Mercado Livre</strong> e da <strong>Shopee</strong>, direto no seu WhatsApp. Você abre o que interessa e decide se vale a compra.</p>
+          <p class="eyebrow">A curadoria que chega até você</p>
+          <h1 id="hero-title">Pare de caçar promoções. <em>Deixe que elas cheguem até você.</em></h1>
+          <p class="hero-lead">Achados do <strong>Mercado Livre</strong> e da <strong>Shopee</strong>, selecionados e enviados ao seu WhatsApp. Menos tempo pulando entre aplicativos. Mais oportunidades para você conferir.</p>
           <div class="hero-price"><strong>R$ 4,90</strong><span>por mês</span></div>
-          <span class="cta cta-pending" aria-label="Assinaturas em breve">⚡ Assinaturas em breve</span>
-          <p class="hero-note">Veja <a href="#o-que-recebe">o que chega no grupo</a> antes de decidir.</p>
+          <a class="cta" href="#assinatura">⚡ Quero receber os achados</a>
+          <p class="hero-note">Assinaturas abrem em breve. <a href="#o-que-recebe">Conheça o que está incluso.</a></p>
         </div>
-        <div class="receipt-wrap" aria-label="Exemplo do formato das mensagens do grupo">
+        <div class="receipt-wrap" aria-label="O que a curadoria oferece">
           <div class="receipt">
-            <div class="receipt-top"><div class="receipt-logo">FLASH OFERTAS <span>23⚡</span></div><span class="receipt-stamp">Exemplo<br>de alerta</span></div>
-            <p class="receipt-caption">Quando um achado merece atenção</p>
-            <div class="receipt-product"><img src="iphone.jpg" alt="Exemplo de produto: iPhone" width="94" height="94"><div><h2>Um achado, sem enrolação.</h2><p>Produto de exemplo. A oferta real vem com detalhes para você conferir.</p></div></div>
+            <div class="receipt-top"><div class="receipt-logo">FLASH OFERTAS <span>23⚡</span></div><span class="receipt-stamp">No seu<br>WhatsApp</span></div>
+            <p class="receipt-caption">Pelo que você paga</p>
+            <p class="receipt-headline">A gente procura. Você escolhe.</p>
+            <p class="receipt-copy">A mensalidade dá acesso à seleção de oportunidades, para você não precisar acompanhar várias vitrines todos os dias.</p>
             <div class="receipt-rule"></div>
-            <ul class="receipt-list"><li>Loja e link para a oferta</li><li>Preço observado ao publicar</li><li>Cupom e condições, quando houver</li></ul>
-            <p class="receipt-foot">Este cartão mostra o formato do alerta. Não representa uma oferta ativa nem garante preço ou estoque.</p>
+            <ul class="receipt-list"><li>Achados reunidos em um grupo</li><li>Cupons quando estiverem disponíveis</li><li>Link direto para conferir na loja</li></ul>
+            <p class="receipt-foot">Você decide se a compra vale a pena. Preço, cupom e estoque podem mudar na loja.</p>
           </div>
         </div>
       </div>
@@ -227,47 +222,46 @@
 
     <section class="section" id="o-que-recebe" aria-labelledby="value-title">
       <div class="container">
-        <p class="section-kicker">A proposta é simples</p>
-        <h2 class="section-title" id="value-title">Pare de abrir dez abas para encontrar uma boa compra.</h2>
-        <p class="section-lead">O Flash Ofertas 23 reúne oportunidades em um só grupo. Você recebe o alerta, confere as condições na loja e escolhe se quer aproveitar.</p>
+        <p class="section-kicker">Oferta boa pode acabar rápido</p>
+        <h2 class="section-title" id="value-title">O tempo de procurar também custa.</h2>
+        <p class="section-lead">Sabe quando você encontra uma promoção e o preço já voltou ao normal? O Flash Ofertas 23 reúne achados em um só lugar para você acompanhar oportunidades sem passar horas procurando em diferentes aplicativos.</p>
         <div class="value-grid">
-          <article class="value-card"><span class="mark" aria-hidden="true">⌕</span><h3>Seleção de ofertas</h3><p>Produtos e cupons encontrados no Mercado Livre e na Shopee, com o contexto necessário para você avaliar.</p></article>
-          <article class="value-card"><span class="mark" aria-hidden="true">↗</span><h3>Link direto para conferir</h3><p>O alerta leva à página da loja. Verifique preço final, frete, estoque e regras do cupom antes de comprar.</p></article>
-          <article class="value-card"><span class="mark" aria-hidden="true">▣</span><h3>No seu WhatsApp</h3><p>Os achados chegam onde você já conversa. Abra apenas os que fizerem sentido para você.</p></article>
+          <article class="value-card"><span class="mark" aria-hidden="true">⌕</span><h3>Achados selecionados</h3><p>Eletrônicos, itens para casa, ferramentas, acessórios e outras categorias quando aparecer uma oportunidade.</p></article>
+          <article class="value-card"><span class="mark" aria-hidden="true">↗</span><h3>Cupons e links diretos</h3><p>Receba o link da loja e cupons quando estiverem disponíveis. Confira preço final, frete e regras antes de comprar.</p></article>
+          <article class="value-card"><span class="mark" aria-hidden="true">▣</span><h3>Tudo no WhatsApp</h3><p>Acompanhe a seleção onde você já conversa, sem instalar outro aplicativo ou visitar várias lojas.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section examples" aria-labelledby="examples-title">
       <div class="container">
-        <p class="section-kicker">De tecnologia à casa</p>
-        <h2 class="section-title" id="examples-title">O tipo de produto que pode aparecer.</h2>
-        <p class="section-lead">A seleção pode variar conforme as oportunidades encontradas. Estes produtos ilustram categorias, sem representar ofertas disponíveis agora.</p>
+        <p class="section-kicker">O que acontece com cada achado</p>
+        <h2 class="section-title" id="examples-title">A gente encontra. Você confere. A compra é na loja.</h2>
+        <p class="section-lead">O grupo compartilha oportunidades para avaliar. O pagamento e a entrega dos produtos acontecem diretamente na loja anunciada.</p>
         <div class="example-grid">
-          <article class="example-card"><img src="iphone.jpg" alt="iPhone, exemplo da categoria tecnologia" loading="lazy" width="224" height="224"><div><small>Tecnologia</small><h3>Celulares e eletrônicos</h3></div></article>
-          <article class="example-card"><img src="bosch.jpg" alt="Maleta de ferramentas, exemplo da categoria ferramentas" loading="lazy" width="400" height="400"><div><small>Ferramentas</small><h3>Itens para resolver em casa</h3></div></article>
-          <article class="example-card"><img src="cooktop.jpg" alt="Cooktop, exemplo da categoria casa" loading="lazy" width="600" height="600"><div><small>Casa</small><h3>Produtos para o dia a dia</h3></div></article>
+          <article class="example-card"><small>01 · Curadoria</small><h3>Menos tempo de busca</h3><p>Reunimos em um só grupo os achados que chamam atenção nas lojas acompanhadas.</p></article>
+          <article class="example-card"><small>02 · Decisão</small><h3>Confira antes de comprar</h3><p>Abra o link e veja o valor final, o frete, o estoque e as condições do cupom.</p></article>
+          <article class="example-card"><small>03 · Compra</small><h3>Direto na loja</h3><p>Se fizer sentido para você, finalize o pedido na plataforma responsável pela oferta.</p></article>
         </div>
-        <p class="example-note">As imagens são exemplos de categorias. Preços e disponibilidade mudam nas lojas.</p>
       </div>
     </section>
 
     <section class="section" id="como-funciona" aria-labelledby="steps-title">
       <div class="container">
-        <p class="section-kicker">Três passos</p>
-        <h2 class="section-title" id="steps-title">Assine. Receba. Decida.</h2>
+        <p class="section-kicker">Simples assim</p>
+        <h2 class="section-title" id="steps-title">Entre. Receba. Aproveite se quiser.</h2>
         <div class="steps-grid">
-          <div class="step"><span class="step-num">01</span><h3>Faça sua assinatura</h3><p>O acesso mensal custa R$ 4,90. A entrada no grupo acontece após a confirmação do pagamento.</p></div>
-          <div class="step"><span class="step-num">02</span><h3>Veja os alertas</h3><p>As ofertas selecionadas chegam no grupo do WhatsApp com informações para você conferir na loja.</p></div>
-          <div class="step"><span class="step-num">03</span><h3>Compre se valer a pena</h3><p>Você escolhe o que abrir. A compra, quando houver, é feita diretamente no site da loja.</p></div>
+          <div class="step"><span class="step-num">01</span><h3>Assine o grupo</h3><p>O acesso custa R$ 4,90 por mês. Depois da confirmação do pagamento, você recebe as instruções de entrada.</p></div>
+          <div class="step"><span class="step-num">02</span><h3>Receba os achados</h3><p>Acompanhe no WhatsApp as oportunidades selecionadas, com link para conferir na loja.</p></div>
+          <div class="step"><span class="step-num">03</span><h3>Escolha o que aproveitar</h3><p>Abra só o que interessar. Se gostar das condições, faça a compra diretamente na loja.</p></div>
         </div>
       </div>
     </section>
 
     <section class="pricing" id="assinatura" aria-labelledby="pricing-title">
       <div class="container pricing-grid">
-        <div><p class="section-kicker">Seu acesso ao grupo</p><h2 id="pricing-title">Uma seleção de oportunidades por um preço simples.</h2><p>Você decide se cada oferta vale seu dinheiro. A mensalidade dá acesso ao grupo e aos alertas publicados durante a assinatura.</p></div>
-        <div class="pricing-card"><p>Flash Ofertas 23</p><div class="amount">R$ 4,90 <span>/ mês</span></div><ul><li>Acesso ao grupo no WhatsApp</li><li>Ofertas de Mercado Livre e Shopee</li><li>Alertas com link e condições para conferir</li></ul><span class="cta cta-pending" aria-label="Assinaturas em breve">⚡ Assinaturas em breve</span><p class="fine">Cobrança mensal. A entrada será liberada após a confirmação do pagamento. As ofertas dependem de disponibilidade nas lojas.</p></div>
+        <div><p class="section-kicker">Quanto vale o seu tempo?</p><h2 id="pricing-title">Menos tempo procurando. Mais chances de achar uma boa compra.</h2><p>Por R$ 4,90 por mês, você tem acesso à curadoria de oportunidades no WhatsApp. A mensalidade paga pela seleção e pela praticidade; cada compra de produto é feita separadamente na loja.</p></div>
+        <div class="pricing-card"><p>Flash Ofertas 23 · grupo pago</p><div class="amount">R$ 4,90 <span>/ mês</span></div><ul><li>Um grupo exclusivo no WhatsApp</li><li>Achados selecionados do Mercado Livre e da Shopee</li><li>Cupons quando disponíveis e links para conferir</li></ul><span class="cta cta-pending" aria-label="Assinaturas ainda não abertas">⚡ Assinaturas em breve</span><p class="fine">A assinatura ainda não está disponível. Quando abrir, a cobrança será mensal e o acesso será liberado após a confirmação do pagamento. Preços, cupons e estoques podem mudar nas lojas.</p></div>
       </div>
     </section>
 
@@ -277,7 +271,8 @@
         <div class="faq-list">
           <details><summary>O grupo vende os produtos?</summary><p>Não. O grupo compartilha oportunidades encontradas em lojas como Mercado Livre e Shopee. Você confere as condições e, se quiser, compra diretamente na loja.</p></details>
           <details><summary>Os preços e cupons são garantidos?</summary><p>Não. Preço, frete, cupom e estoque podem mudar a qualquer momento. Sempre confira as condições finais na página do produto antes de pagar.</p></details>
-          <details><summary>É mensal? Posso cancelar?</summary><p>Sim. A cobrança é mensal e você poderá pedir o cancelamento ao responsável pelo grupo. O canal de atendimento será informado antes da assinatura. O acesso termina ao fim do período pago.</p></details>
+          <details><summary>Por que pagar por um grupo de ofertas?</summary><p>A mensalidade paga pela curadoria e pela conveniência de receber achados reunidos no WhatsApp. Não é uma taxa cobrada pelas lojas nem garante desconto em toda compra.</p></details>
+          <details><summary>É mensal? Posso cancelar?</summary><p>Sim. A cobrança será mensal e você poderá pedir o cancelamento ao responsável pelo grupo. O canal de atendimento será informado antes da assinatura. O acesso termina ao fim do período pago.</p></details>
           <details><summary>Quando recebo acesso?</summary><p>Depois que o pagamento da assinatura for confirmado. As instruções de entrada serão apresentadas ao concluir a compra.</p></details>
           <details><summary>Outras pessoas verão meu número?</summary><p>Sim. Em grupos de WhatsApp, o número de telefone dos participantes pode ser visto pelos demais membros.</p></details>
         </div>
@@ -286,6 +281,6 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><p><strong>FLASH OFERTAS 23 ⚡</strong><br>Curadoria independente de ofertas. Mercado Livre e Shopee são citados como lojas onde produtos podem ser encontrados.</p><p>Confira sempre preço final, frete, cupom e disponibilidade antes de comprar.</p></div></footer>
-  <div class="mobile-bar"><strong>R$ 4,90/mês</strong><span class="cta cta-pending" aria-label="Assinaturas em breve">Em breve</span></div>
+  <div class="mobile-bar"><strong>R$ 4,90/mês</strong><a class="cta" href="#assinatura">Ver assinatura</a></div>
 </body>
 </html>
